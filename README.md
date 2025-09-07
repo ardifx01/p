@@ -4,7 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-![FlexForge Portfolio](https://ridwaanhall.com/static/img/project/ridwaanhall_com_2025070701.webp)
 
 > **A modern portfolio template with individual file data management, real-time API integrations, configurable guestbook, and enterprise-grade security.**
 
@@ -42,8 +41,8 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/ridwaanhall/ridwaanhall-com.git
-cd ridwaanhall-com
+git clone https://github.com/ardifx01/p.git
+cd p
 
 # Setup virtual environment
 python -m venv venv
