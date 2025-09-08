@@ -454,6 +454,346 @@ class SkillsData:
             "description": "Framework that makes building simple and scalable test cases easy",
             "icon_svg": f"{settings.BASE_URL}/static/svg/icon/pytest.svg"
         },
+        "rust": {
+            "name": "Rust",
+            "description": "Memory-safe, high-performance systems programming language",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/rust-original.svg"
+        },
+        "angular": {
+            "name": "Angular",
+            "description": "TypeScript-based web framework maintained by Google",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/angular-original.svg"
+        },
+        "vue": {
+            "name": "Vue.js",
+            "description": "Progressive JavaScript framework for building UIs",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/vue-original.svg"
+        },
+        "nuxtjs": {
+            "name": "Nuxt.js",
+            "description": "Meta-framework for Vue.js applications",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/nuxtjs-original.svg"
+        },
+        "nestjs": {
+            "name": "NestJS",
+            "description": "Progressive Node.js framework for scalable server-side apps",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/nestjs-original.svg"
+        },
+        "svelte": {
+            "name": "Svelte",
+            "description": "Compiler that generates minimal and efficient JavaScript",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/svelte-original.svg"
+        },
+        "solidjs": {
+            "name": "SolidJS",
+            "description": "Reactive JavaScript library for building user interfaces",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/solidjs-original.svg"
+        },
+        "terraform": {
+            "name": "Terraform",
+            "description": "Infrastructure as Code tool for managing cloud resources",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/terraform-original.svg"
+        },
+        "ansible": {
+            "name": "Ansible",
+            "description": "Automation tool for configuration management and deployment",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/ansible-original.svg"
+        },
+        "prometheus": {
+            "name": "Prometheus",
+            "description": "Monitoring and alerting toolkit for cloud-native applications",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/prometheus-original.svg"
+        },
+        "grafana": {
+            "name": "Grafana",
+            "description": "Analytics and visualization platform for monitoring data",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/grafana-original.svg"
+        },
+        "jenkins": {
+            "name": "Jenkins",
+            "description": "Automation server for continuous integration and delivery",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/jenkins-original.svg"
+        },
+        "githubactions": {
+            "name": "GitHub Actions",
+            "description": "Automation workflows for CI/CD directly in GitHub",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/githubactions-original.svg"
+        },
+        "supabase": {
+            "name": "Supabase",
+            "description": "Open-source Firebase alternative for building apps",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/supabase-original.svg"
+        },
+        "planetscale": {
+            "name": "PlanetScale",
+            "description": "Serverless MySQL platform built on Vitess",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/planetscale-original.svg"
+        },
+        "godot": {
+            "name": "Godot",
+            "description": "Open-source game engine for 2D and 3D game development",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/godot-original.svg"
+        },
+        "electron": {
+            "name": "Electron",
+            "description": "Framework for building cross-platform desktop apps with JavaScript",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/electron-original.svg"
+        },
+        "blender": {
+            "name": "Blender",
+            "description": "Free and open-source 3D creation suite",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/blender-original.svg"
+        },
+        "c": {
+            "name": "C",
+            "description": "General-purpose programming language for system development",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/c-original.svg"
+        },
+        "cpp": {
+            "name": "C++",
+            "description": "Extension of C with object-oriented and generic programming features",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/cplusplus-original.svg"
+        },
+        "csharp": {
+            "name": "C#",
+            "description": "Modern object-oriented programming language developed by Microsoft",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/csharp-original.svg"
+        },
+        "java": {
+            "name": "Java",
+            "description": "Robust, object-oriented programming language for enterprise applications",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/java-original.svg"
+        },
+        "go": {
+            "name": "Go",
+            "description": "Efficient compiled language for scalable cloud-native applications",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/go-original.svg"
+        },
+        "rust": {
+            "name": "Rust",
+            "description": "Memory-safe, high-performance systems programming language",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/rust-original.svg"
+        },
+        "scala": {
+            "name": "Scala",
+            "description": "Functional and object-oriented programming language for JVM",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/scala-original.svg"
+        },
+        "lua": {
+            "name": "Lua",
+            "description": "Lightweight scripting language for embedded applications and games",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/lua-original.svg"
+        },
+        "haskell": {
+            "name": "Haskell",
+            "description": "Purely functional programming language with strong type system",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/haskell-original.svg"
+        },
+        "dart": {
+            "name": "Dart",
+            "description": "Programming language optimized for building cross-platform apps with Flutter",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/dart-original.svg"
+        },
+        "kotlin": {
+            "name": "Kotlin",
+            "description": "Modern language for Android and JVM development",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/kotlin-original.svg"
+        },
+
+        # Frontend frameworks
+        "angular": {
+            "name": "Angular",
+            "description": "TypeScript-based framework maintained by Google",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/angular-original.svg"
+        },
+        "vue": {
+            "name": "Vue.js",
+            "description": "Progressive JavaScript framework for building UIs",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/vue-original.svg"
+        },
+        "nuxtjs": {
+            "name": "Nuxt.js",
+            "description": "Meta-framework for Vue.js applications",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/nuxtjs-original.svg"
+        },
+        "svelte": {
+            "name": "Svelte",
+            "description": "Compiler that generates minimal and efficient JavaScript",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/svelte-original.svg"
+        },
+        "solidjs": {
+            "name": "SolidJS",
+            "description": "Reactive JavaScript library for building user interfaces",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/solidjs-original.svg"
+        },
+        "ember": {
+            "name": "Ember.js",
+            "description": "Opinionated framework for ambitious web applications",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/ember-original.svg"
+        },
+        "astro": {
+            "name": "Astro",
+            "description": "Static site generator with modern web standards",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/astro-original.svg"
+        },
+        "gatsby": {
+            "name": "Gatsby",
+            "description": "React-based static site generator",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/gatsby-original.svg"
+        },
+
+        # Backend frameworks
+        "nestjs": {
+            "name": "NestJS",
+            "description": "Progressive Node.js framework for scalable server-side apps",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/nestjs-original.svg"
+        },
+        "rocket": {
+            "name": "Rocket",
+            "description": "Web framework for Rust with async support",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/rocket-original.svg"
+        },
+        "bun": {
+            "name": "Bun",
+            "description": "Fast all-in-one JavaScript runtime",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/bun-original.svg"
+        },
+        "tauri": {
+            "name": "Tauri",
+            "description": "Framework for building tiny, fast desktop apps with Rust + JS",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/tauri-original.svg"
+        },
+
+        # DevOps & Cloud
+        "docker": {
+            "name": "Docker",
+            "description": "Containerization platform",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/docker-original.svg"
+        },
+        "kubernetes": {
+            "name": "Kubernetes",
+            "description": "Container orchestration system",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/kubernetes-original.svg"
+        },
+        "terraform": {
+            "name": "Terraform",
+            "description": "Infrastructure as Code tool for cloud provisioning",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/terraform-original.svg"
+        },
+        "ansible": {
+            "name": "Ansible",
+            "description": "Automation tool for configuration management",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/ansible-original.svg"
+        },
+        "jenkins": {
+            "name": "Jenkins",
+            "description": "Automation server for CI/CD pipelines",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/jenkins-original.svg"
+        },
+        "githubactions": {
+            "name": "GitHub Actions",
+            "description": "Automation workflows for CI/CD inside GitHub",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/githubactions-original.svg"
+        },
+        "grafana": {
+            "name": "Grafana",
+            "description": "Analytics & visualization for monitoring data",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/grafana-original.svg"
+        },
+        "prometheus": {
+            "name": "Prometheus",
+            "description": "Monitoring and alerting toolkit",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/prometheus-original.svg"
+        },
+        "supabase": {
+            "name": "Supabase",
+            "description": "Open-source Firebase alternative",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/supabase-original.svg"
+        },
+        "planetscale": {
+            "name": "PlanetScale",
+            "description": "Serverless MySQL platform built on Vitess",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/planetscale-original.svg"
+        },
+
+        # Game & Multimedia
+        "godot": {
+            "name": "Godot",
+            "description": "Open-source game engine for 2D and 3D development",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/godot-original.svg"
+        },
+        "blender": {
+            "name": "Blender",
+            "description": "Open-source 3D creation suite",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/blender-original.svg"
+        },
+        "unity": {
+            "name": "Unity",
+            "description": "Cross-platform game engine for 2D/3D games",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/unity-original.svg"
+        },
+        "unreal": {
+            "name": "Unreal Engine",
+            "description": "High-performance game engine from Epic Games",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/unreal-original.svg"
+        },
+
+        # Editors / IDEs
+        "vim": {
+            "name": "Vim",
+            "description": "Highly configurable text editor",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/vim-original.svg"
+        },
+        "neovim": {
+            "name": "Neovim",
+            "description": "Hyperextensible Vim-based text editor",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/neovim-original.svg"
+        },
+        "sublime": {
+            "name": "Sublime Text",
+            "description": "Lightweight and fast text editor",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/sublime-original.svg"
+        },
+        "visualstudio": {
+            "name": "Visual Studio",
+            "description": "Microsoft IDE for multiple languages",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/visualstudio-original.svg"
+        },
+        "intellijidea": {
+            "name": "IntelliJ IDEA",
+            "description": "Powerful IDE for JVM languages",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/intellij-original.svg"
+        },
+        "phpstorm": {
+            "name": "PhpStorm",
+            "description": "JetBrains IDE for PHP development",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/phpstorm-original.svg"
+        },
+        "clion": {
+            "name": "CLion",
+            "description": "JetBrains IDE for C and C++ development",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/clion-original.svg"
+        },
+        "rider": {
+            "name": "Rider",
+            "description": "JetBrains IDE for .NET development",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/rider-original.svg"
+        },
+        "obsidian": {
+            "name": "Obsidian",
+            "description": "Knowledge base and markdown editor",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/obsidian-original.svg"
+        },
+        "notion": {
+            "name": "Notion",
+            "description": "Productivity and note-taking app",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/notion-original.svg"
+        },
+        "emacs": {
+            "name": "Emacs",
+            "description": "Extensible and customizable text editor",
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/emacs-original.svg"
+        },
     }
     
     # Legacy list format for backward compatibility
