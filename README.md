@@ -124,7 +124,7 @@ This project requires several environment variables for proper functionality. Cr
 
 #### Core Application Settings
 
-- **BASE_URL**: Your application's domain URL (e.g., <https://ridwaanhall.com>)
+- **BASE_URL**: Your application's domain URL (e.g., <https://mnkdigital.tech>)
 - **SECRET_KEY**: Django's secret key for cryptographic signing - generate using `python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'`
 - **DEBUG**: Set to `True` for development, `False` for production
 - **ALLOWED_HOSTS**: Comma-separated list of allowed hosts for development (only used when DEBUG=True)
