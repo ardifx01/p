@@ -1,4 +1,4 @@
-# Contributing to ridwaanhall.com
+# Contributing to mnkdigital.tech
 
 Thank you for your interest in contributing to this Django portfolio project! This document provides guidelines and information for contributors to ensure a smooth and effective collaboration process.
 
