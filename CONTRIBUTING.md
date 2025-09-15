@@ -38,14 +38,14 @@ Before you begin, ensure you have the following installed:
 2. **Clone your fork** locally:
 
    ```powershell
-   git clone https://github.com/ridwaanhall/ridwaanhall-com.git
+   git clone https://github.com/ardifx01/p.git
    cd ridwaanhall-com
    ```
 
 3. **Add upstream remote**:
 
    ```powershell
-   git remote add upstream https://github.com/ridwaanhall/ridwaanhall-com.git
+   git remote add upstream https://github.com/ardifx01/p.git
    ```
 
 ## Development Setup
@@ -475,7 +475,7 @@ class BlogViewTests(TestCase):
 - **Use environment variables** for configuration
 - **Validate user input** properly
 - **Follow Django security best practices**
-- **Report security issues** privately to [hi@ridwaanhall.com](mailto:hi@ridwaanhall.com)
+- **Report security issues** privately to [hi@aanhall.com](mailto:nadhifkarim89@gmail.com)
 
 ### Security Checklist
 
@@ -490,8 +490,7 @@ class BlogViewTests(TestCase):
 ### Communication Channels
 
 - **GitHub Issues**: For bugs and feature requests
-- **Email**: [hi@ridwaanhall.com](mailto:hi@ridwaanhall.com) for private communications
-- **LinkedIn**: [in/ridwaanhall](https://linkedin.com/in/ridwaanhall) for professional inquiries
+- **Email**: [nadhifkarim89@gmail.com](mailto:nadhifkarim89@gmail.com) for private communications
 
 ### Resources
 
@@ -514,6 +513,6 @@ By contributing to this project, you agree that your contributions will be licen
 
 ---
 
-Thank you for contributing to ridwaanhall.com! Your efforts help make this project better for everyone. 🚀
+Thank you for contributing! Your efforts help make this project better for everyone. 🚀
 
-**Questions?** Feel free to reach out via [email](mailto:hi@ridwaanhall.com) or create an issue for clarification.
+**Questions?** Feel free to reach out via [email](mailto:nadhifkarim89@gmail.com) or create an issue for clarification.
