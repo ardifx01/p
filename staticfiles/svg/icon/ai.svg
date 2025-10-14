@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-10 h-10">
+  <defs>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"></stop>
+      <stop offset="100%" stop-color="#1e40af"></stop>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="url(#aiGradient)" stroke="#60a5fa" stroke-width="8"></circle>
+  <path fill="none" stroke="#93c5fd" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M180 220h152M180 292h152M210 256h92"></path>
+  <circle cx="170" cy="190" r="18" fill="#93c5fd"></circle>
+  <circle cx="342" cy="190" r="18" fill="#93c5fd"></circle>
+  <circle cx="256" cy="256" r="60" fill="none" stroke="#bfdbfe" stroke-width="8" stroke-dasharray="8 8"></circle>
+</svg>
