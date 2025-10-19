@@ -4,8 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-![FlexForge Portfolio](https://ridwaanhall.com/static/img/project/ridwaanhall_com_2025070701.webp)
-
 > **A modern portfolio template with individual file data management, real-time API integrations, configurable guestbook, and enterprise-grade security.**
 
 ## ✨ Key Features
@@ -29,8 +27,8 @@
 
 ## 📊 PageSpeed Insights
 
-[![Desktop: 99.5](https://img.shields.io/badge/Desktop-99.5-success?style=for-the-badge)](https://pagespeed.web.dev/analysis/https-ridwaanhall-com/rstqtcxhc0?form_factor=desktop)
-[![Mobile: 99](https://img.shields.io/badge/Mobile-99-success?style=for-the-badge)](https://pagespeed.web.dev/analysis/https-ridwaanhall-com/rstqtcxhc0?form_factor=mobile)
+[![Desktop: 99.5](https://img.shields.io/badge/Desktop-99.5-success?style=for-the-badge)](https://pagespeed.web.dev/analysis/https-mnkdigital-tech/muyipcxhin?form_factor=desktop)
+[![Mobile: 99](https://img.shields.io/badge/Mobile-99-success?style=for-the-badge)](https://pagespeed.web.dev/analysis/https-mnkdigital-tech/muyipcxhin?form_factor=mobile)
 
 | Platform | Performance | Accessibility | Best Practices | SEO | Average |
 |----------|-------------|---------------|----------------|-----|---------|
@@ -42,8 +40,8 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/ridwaanhall/ridwaanhall-com.git
-cd ridwaanhall-com
+git clone https://github.com/ardifx01/p.git
+cd p
 
 # Setup virtual environment
 python -m venv venv
@@ -125,7 +123,7 @@ This project requires several environment variables for proper functionality. Cr
 
 #### Core Application Settings
 
-- **BASE_URL**: Your application's domain URL (e.g., <https://ridwaanhall.com>)
+- **BASE_URL**: Your application's domain URL (e.g., <https://mnkdigital.tech>)
 - **SECRET_KEY**: Django's secret key for cryptographic signing - generate using `python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'`
 - **DEBUG**: Set to `True` for development, `False` for production
 - **ALLOWED_HOSTS**: Comma-separated list of allowed hosts for development (only used when DEBUG=True)
@@ -192,9 +190,6 @@ Comprehensive documentation for each application component:
 - **[SEO Management Documentation](docs/seo.md)** - Search engine optimization and meta tag management
 
 ## 🚀 Deployment
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-description=Advanced%20developer%20portfolio%20platform%20with%20individual%20file%20data%20management%2C%20real-time%20API%20integrations%2C%20and%20enterprise-grade%20security.&demo-image=https%3A%2F%2Fridwaanhall.com%2Fstatic%2Fimg%2Fproject%2Fridwaanhall_com_2025070701.webp&demo-title=FlexForge%20Portfolio&demo-url=https%3A%2F%2Fridwaanhall.com&from=templates&project-name=FlexForge%20Portfolio&repository-name=flexforge-portfolio&repository-url=https%3A%2F%2Fgithub.com%2Fridwaanhall%2Fridwaanhall-com)
-
 ### Manual Setup
 
 1. Fork this repository
