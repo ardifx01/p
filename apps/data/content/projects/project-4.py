@@ -1,5 +1,5 @@
 """
-Project #4: BMKG Weather & Quake Tracker
+Project #4: Justnote-Client 
 Generated from centralized projects data
 """
 
@@ -7,38 +7,44 @@ from datetime import datetime
 from django.conf import settings
 from apps.data.about.skills_data import SkillsData
 
-# Project data for: BMKG Weather & Quake Tracker
+# Project data for: Justnote-Client
 project_data = {
-    "id": 4,
-    "title": """BMKG Weather & Quake Tracker""",
-    "headline": """Stay woke with real-time weather and quake updates, served fresh by Flask.""",
-    "description": ['This Flask and AdminLTE combo dishes out live weather forecasts and earthquake alerts.', 'Data comes straight from BMKG, so you know it’s legit and on point.', 'From Yogyakarta’s skies to the latest tremors, this tool’s got you covered.'],
+    "id": 4, 
+    "title": """Justnote-Client""",
+    "headline": """A simple, fast, privacy-focused cross-platform note-taking app.""",
+    "description": [
+        "Justnote-Client is part of Justnote, a privacy-focused note-taking application designed to give users full control and ownership of their data.",
+        "Features include end-to-end encryption, nested lists, tags, pin-to-top, ability to lock notes or lists, dark mode, and support across web, Android, and iOS platforms.",
+        "Built with a focus on speed and usability, it emphasizes user privacy without sacrificing functionality."
+    ],
     "images": {
-        "bmkg_weather_quake_hub.webp": f"{settings.PROJECT_BASE_IMG_URL}/bmkg_weather_quake_hub.webp"
+        "justnote-client.png": f"{settings.PROJECT_BASE_IMG_URL}/justnote-client.png",
     },
     "is_featured": False,
-    "features": [{'title': 'Live Weather Vibes', 'description': 'Check 3-day forecasts with wind speed, direction, and more.'}, {'title': 'Quake Watch', 'description': 'Stay in the loop with the latest earthquake updates from BMKG.'}, {'title': 'Indonesia Focus', 'description': 'Tailored for local data, keeping it real and relevant.'}],
-    "tech_stack": [
-        SkillsData.tech_stack["python"],
-        SkillsData.tech_stack["flask"],
-        SkillsData.tech_stack["adminlte"]
+    "features": [
+        {"title": "End-to-End Encryption", "description": "Your notes are encrypted locally—only you can decrypt them."},
+        {"title": "Cross-Platform", "description": "Available on the web, Android, and iOS for seamless note access."},
+        {"title": "Rich Usability Features", "description": "Includes nested lists, tags, pinning, locking notes/lists, and dark mode for an enhanced UX."}
     ],
-    "github_url": "",
-    "demo_url": "",
-    "status": "completed",
+    "tech_stack": [
+        SkillsData.tech_stack["reactnative"],  
+        SkillsData.tech_stack["redux"],
+        SkillsData.tech_stack["ckeditor"], 
+    ],
+    "github_url": "https://github.com/ardifx01/justnote-client", 
+    "demo_url": "https://justnote.cc",
+    "status": "active",
     "created_at": None,
-    "updated_at": datetime.strptime("2023-07-30T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "category": "Web App, Weather, Disaster Monitoring, Flask",
+    "updated_at": datetime.strptime("2025-09-09T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "category": "Note-Taking, Privacy, Productivity",
     "tags": [
-        "BMKG",
-        "Weather",
-        "Earthquake",
-        "Flask",
-        "AdminLTE",
-        "Indonesia",
-        "Real-time Data",
-        "Disaster Monitoring",
-        "Forecast"
+        "Privacy",
+        "E2EE",
+        "Note-Taking",
+        "Cross-Platform",
+        "React",
+        "Mobile App",
+        "Web App"
     ],
     "priority": 1,
     "slug": ""

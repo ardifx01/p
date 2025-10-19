@@ -1,5 +1,5 @@
 """
-Project #43: BeliMadu.com
+Project #43: Kodbox Filemanager
 Generated from centralized projects data
 """
 
@@ -10,27 +10,27 @@ from apps.data.about.skills_data import SkillsData
 # Project data for: BeliMadu.com
 project_data = {
     "id": 43,
-    "title": """BeliMadu.com""",
-    "headline": """E-commerce hotspot for honey treats, built with Django and Bootstrap on Vercel.""",
-    "description": ['Belimadu.com is your go-to e-commerce hub for honey products, crafted with Django and Bootstrap, hosted on Vercel. It’s loaded with a product catalog, health tips, WhatsApp ordering, and monthly deals.', 'A sweet spot for honey fans, mixing helpful articles with a smooth shopping experience. SEO tweaks make it shine on Google.', 'Customers can hit up WhatsApp for quick orders, and monthly promos keep the buzz alive with fresh offers.'],
+    "title": """Kodbox Filemanager""",
+    "headline": """Self-hosted file management and collaboration platform.""",
+    "description": ['Kodbox is an open-source, web-based file manager.', 'It supports file sharing, permission management, and online editing.'],
     "images": {
-        "belimadu_com.webp": f"{settings.PROJECT_BASE_IMG_URL}/belimadu_com.webp"
+        "belimadu_com.webp": f"{settings.PROJECT_BASE_IMG_URL}/kodbox.webp"
     },
     "is_featured": True,
-    "features": [{'title': 'Honey Catalog', 'description': 'Lists products with crisp images and details.'}, {'title': 'WhatsApp Orders', 'description': 'Chat directly to place orders fast.'}, {'title': 'Hot Deals', 'description': 'Monthly specials on seasonal honey picks.'}],
+    "features": [{'title': "File Sharing", 'description': 'Share files with links and permissions.'}, {'title': 'Cross-Platform', 'description': 'Deployable on Linux, Windows, or Docker.'}],
     "tech_stack": [
-        SkillsData.tech_stack["python"],
-        SkillsData.tech_stack["django"],
-        SkillsData.tech_stack["bootstrap"],
-        SkillsData.tech_stack["vercel"]
+        SkillsData.tech_stack["php"],
+        SkillsData.tech_stack["mysql"],
+        SkillsData.tech_stack["javascript"],
+        SkillsData.tech_stack["html"]
     ],
-    "github_url": "",
-    "demo_url": "https://belimadu.com",
+    "github_url": "https://github.com/ardifx01/kodbox",
+    "demo_url": "",
     "status": "completed",
     "created_at": None,
     "updated_at": datetime.strptime("2025-04-16T21:51:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "category": "E-commerce",
-    "tags": ["django", "e-commerce", "bootstrap", "vercel", "honey", "whatsapp", "seo"],
+    "category": "File Management",
+    "tags": ["filemanager", "php", "cloud-storage", "self-hosted", "document-management", "collaboration", "open-source"],
     "priority": 1,
     "slug": ""
 }

@@ -8,4 +8,10 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('send-message/', views.SendMessageView.as_view(), name='send_message'),
     path('delete-message/', views.DeleteMessageView.as_view(), name='delete_message'),
+
+    path(
+        'auth/google/callback',
+        include('allauth.socialaccount.urls')
+    ),
+
 ]

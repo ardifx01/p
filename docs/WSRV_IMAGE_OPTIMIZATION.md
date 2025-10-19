@@ -49,22 +49,22 @@ Add this to the top of your template:
 <img src="{{ image_url|wsrv_image }}" alt="Image">
 
 <!-- With width and height -->
-<img src="{{ image_url|wsrv_image:'300x300' }}" alt="Image">
+<img src="{{ image_url|wsrv_image:'600x600' }}" alt="Image">
 
 <!-- With width only -->
-<img src="{{ image_url|wsrv_image:'300' }}" alt="Image">
+<img src="{{ image_url|wsrv_image:'600' }}" alt="Image">
 
 <!-- With height only -->
-<img src="{{ image_url|wsrv_image:'x300' }}" alt="Image">
+<img src="{{ image_url|wsrv_image:'x600' }}" alt="Image">
 ```
 
 #### Template Tag Usage
 
 ```django
 <!-- More flexible usage -->
-{% wsrv_img image_url width=300 height=300 %}
-{% wsrv_img image_url width=300 %}
-{% wsrv_img image_url height=300 format_type="webp" %}
+{% wsrv_img image_url width=600 height=600 %}
+{% wsrv_img image_url width=600 %}
+{% wsrv_img image_url height=600 format_type="webp" %}
 ```
 
 ### Examples from Current Templates
@@ -76,7 +76,7 @@ Add this to the top of your template:
 <img src="{{ blog.image_url|wsrv_image }}" alt="{{ blog.title }}">
 
 <!-- Blog card image -->
-<img src="{{ blog.image_url|wsrv_image:'300x300' }}" alt="{{ blog.title }}">
+<img src="{{ blog.image_url|wsrv_image:'600x600' }}" alt="{{ blog.title }}">
 
 <!-- Author avatar -->
 <img src="{{ blog.author_image|wsrv_image:'50x50' }}" alt="{{ blog.author }}">

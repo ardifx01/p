@@ -10,7 +10,7 @@ from apps.data.about.skills_data import SkillsData
 # Project data for: ridwaanhall.pythonanywhere.com
 project_data = {
     "id": 32,
-    "title": """ridwaanhall.pythonanywhere.com""",
+    "title": """portfolio v3""",
     "headline": """Slick portfolio site with Vuexy HTML and Django, showing off GitHub stats.""",
     "description": ['This portfolio site, powered by Vuexy HTML and Django, is loaded with sections and a GitHub-driven stats dashboard.', 'Rocking a sharp design and a smart backend for easy content updates, plus secure admin access.', 'The dashboard pulls yearly GitHub data to flex my coding grind in style.'],
     "images": {

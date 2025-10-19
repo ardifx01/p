@@ -1,5 +1,5 @@
 """
-Project #6: MLBB Stats & Winrate API
+Project #6: Hyperswitch 
 Generated from centralized projects data
 """
 
@@ -7,37 +7,43 @@ from datetime import datetime
 from django.conf import settings
 from apps.data.about.skills_data import SkillsData
 
-# Project data for: MLBB Stats & Winrate API
+# Project data for: Hyperswitch
 project_data = {
-    "id": 6,
-    "title": """MLBB Stats & Winrate API""",
-    "headline": """Level up with MLBB player stats and winrates, served hot by Flask.""",
-    "description": ['This Flask API is your ticket to Mobile Legends data—usernames, MPL stats, winrates, and more.', 'Pulls info from mainlagiaja.com, id-mpl.com, takapadia.com, plus some custom flair I cooked up.', 'A must-have for devs and gamers who want MLBB stats without the grind.'],
+    "id": 6, 
+    "title": """Hyperswitch""",
+    "headline": """An open-source, high-performance payments switch written in Rust.""",
+    "description": [
+        "Hyperswitch is a modular payments infrastructure that lets businesses connect to multiple payment processors via a unified API.",
+        "It supports features like intelligent routing, retry strategies, card vaulting, cost observability, reconciliation, and flexible orchestration.",
+        "Built for scale and performance, it’s designed to reduce vendor lock-in and streamline integration across global payment methods."
+    ],
     "images": {
-        "mlbb_game_stats_api.webp": f"{settings.PROJECT_BASE_IMG_URL}/mlbb_game_stats_api.webp"
+        "hyperswitch.png": f"{settings.PROJECT_BASE_IMG_URL}/hyperswitch.png"
     },
     "is_featured": False,
-    "features": [{'title': 'Username Grabber', 'description': 'Scoop up player usernames fast via mainlagiaja.com’s API.'}, {'title': 'MPL Stats Connect', 'description': 'Dives into id-mpl.com for juicy stats and insights.'}, {'title': 'Winrate Wizard', 'description': 'Cranks out accurate winrates using takapadia.com data.'}],
-    "tech_stack": [
-        SkillsData.tech_stack["python"],
-        SkillsData.tech_stack["flask"]
+    "features": [
+        {"title": "Unified Payments API", "description": "Abstracts multiple PSPs behind a single API interface."},
+        {"title": "Intelligent Routing & Retry", "description": "Optimize for cost and success with smart fallback logic."},
+        {"title": "PCI-Compliant Vaulting", "description": "Securely store and reuse payment credentials across merchants."}
     ],
-    "github_url": "",
-    "demo_url": "https://mlbb-api.ridwaanhall.repl.co",
-    "status": "completed",
+    "tech_stack": [
+        SkillsData.tech_stack["rust"],
+        SkillsData.tech_stack["postgresql"],
+        SkillsData.tech_stack["docker"], 
+    ],
+    "github_url": "https://github.com/ardifx01/hyperswitch", 
+    "demo_url": "",
+    "status": "active",
     "created_at": None,
-    "updated_at": datetime.strptime("2023-08-15T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "category": "API, Gaming, MLBB, Flask",
+    "updated_at": datetime.strptime("2025-08-11T00:00:00+00:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "category": "Payments, Microservices, Fintech",
     "tags": [
-        "MLBB",
-        "Mobile Legends",
-        "API",
-        "Flask",
-        "Game Stats",
-        "Winrate",
-        "Player Data",
-        "Python",
-        "Gaming"
+        "Rust",
+        "Payments",
+        "Open Source",
+        "Fintech",
+        "Gateway",
+        "Infrastructure"
     ],
     "priority": 1,
     "slug": ""

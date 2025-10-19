@@ -107,7 +107,7 @@ class ExperiencesData:
             "location": "Bandung, Indonesia 🇮🇩",
             "is_current": False,
             "responsibilities": [
-                "Led weekly mentoring sessions for 24 students, resulting in a 75% graduation rate and maintaining an average attendance of 84%.",
+                "Led weekly mentoring sessions for 87 students, resulting in a 75% graduation rate and maintaining an average attendance of 84%.",
                 "Provided 1.5 hours per week of personalized one-on-one sessions, addressing individual challenges and academic assignments to support student development.",
                 "Conducted alternating weekly sessions on soft and technical skills (2 hours/week) for 50 participants, managing facilitator coordination, content preparation, session moderation, and cohort engagement monitoring.",
                 "Participated in monthly 1.5-hour meetings and professional development sessions for mentors."

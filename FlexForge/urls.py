@@ -1,6 +1,14 @@
 from django.urls import path, include
+from django.conf.urls import handler403, handler404
 from django.conf import settings
 from . import views
+from django.shortcuts import render
+
+handler404 = "apps.core.views.error_404"
+
+def duotone_view(request):
+    return render(request, "duotone.html")
+
 
 urlpatterns = [
     path('', include('apps.core.urls')),
@@ -9,6 +17,8 @@ urlpatterns = [
     path('projects/', include('apps.projects.urls')),
     path('blog/', include('apps.blog.urls')),
     path('about/', include('apps.about.urls')),
+    path("1312/", duotone_view, name="1312"),
+    path('axion-v1/', include('apps.axion_v1.urls')),
     
     # Add favicon path before the catch-all
     path('favicon.ico', views.favicon_view, name='favicon'),

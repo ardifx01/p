@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Halaman Tidak Ditemukan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Black', sans-serif;
+      background: #FFD93D; /* warna utama background */
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: #fff;
+      border: 4px solid #000;
+      box-shadow: 6px 6px 0 #000;
+      padding: 40px;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin: 0;
+      color: #1A1AFF; /* aksen biru */
+      text-shadow: 3px 3px #000;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #1A1AFF;
+      color: #fff;
+      text-decoration: none;
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0 #000;
+      font-weight: bold;
+      transition: transform 0.1s ease;
+    }
+
+    a:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <p>Ups! Halaman yang kamu cari tidak ditemukan.</p>
+    <a href="/">⬅ Kembali ke Beranda</a>
+  </div>
+</body>
+</html>
+

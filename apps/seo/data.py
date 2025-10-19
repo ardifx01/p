@@ -33,13 +33,13 @@ class SEOData:
             'google_site_verification': '',  # Add your Google Search Console verification code
             'bing_verification': '',  # Add your Bing verification code  
             'pinterest_verification': '',  # Add your Pinterest verification code
-            'twitter_site': '@ridwaanhall',
-            'twitter_creator': '@ridwaanhall',
-            'twitter_image_alt': 'ridwaanhall.com - Ridwan Halim Portfolio'
+            'twitter_site': '@el_2083',
+            'twitter_creator': '@el_2083',
+            'twitter_image_alt': 'mnkdigital.tech - Muhammad Nadhif Karim Portfolio'
         }
     
     @staticmethod
-    def generate_image_alt_text(title: str, context: str = 'ridwaanhall.com') -> str:
+    def generate_image_alt_text(title: str, context: str = 'mnkdigital.tech') -> str:
         """Generate SEO-optimized alt text for images."""
         if not title:
             return f"{context} - Portfolio and Blog"

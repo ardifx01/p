@@ -10,6 +10,12 @@ from django.http import FileResponse
 
 logger = logging.getLogger(__name__)
 
+def error_404(request, exception):
+    return render(request, "error.html", status=404)
+
+def custom_403_view(request, exception=None):
+    # Alihkan semua 403 ke tampilan 404
+    return custom_404_view(request, exception)
 
 def custom_404_view(request, exception):
     """

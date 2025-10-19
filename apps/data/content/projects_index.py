@@ -71,7 +71,7 @@ class ProjectsDataIndex:
                         # If we have key references, resolve them
                         if tech_keys:
                             project_data['tech_stack'] = tech_keys
-                    
+                             
                     projects.append(project_data)
                     
             except Exception as e:

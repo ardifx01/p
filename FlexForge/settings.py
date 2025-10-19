@@ -2,7 +2,6 @@
 Django 5.2.x settings for FlexForge project.
 Contains security configurations and environment-specific settings.
 
-Author: Ridwan Halim (ridwaanhall.com)
 License: Apache License 2.0
 Created at: March 16, 2025
 """
@@ -10,30 +9,34 @@ Created at: March 16, 2025
 from pathlib import Path
 from decouple import config, Csv
 from csp.constants import SELF, NONE, UNSAFE_INLINE
-
+from dotenv import load_dotenv
+import os
 # ------------------------------------------------------------------------------
 # BASE SETTINGS
 # ------------------------------------------------------------------------------
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
+
 
 # Environment and deployment settings
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = False
 
 SECRET_KEY = config('SECRET_KEY')
 ACCESS_TOKEN = config('ACCESS_TOKEN')
 WAKATIME_API_KEY = config('WAKATIME_API_KEY')
 WEB3FORM_PAC = config('WEB3FORM_PAC', default='')
 
-BASE_URL = config('BASE_URL', default='https://ridwaanhall.com')
+BASE_URL = config('BASE_URL', default='https://mnkdigital.tech')
 BLOG_BASE_IMG_URL = config('BLOG_BASE_IMG_URL', default=f'{BASE_URL}/static/img/blog')
 PROJECT_BASE_IMG_URL = config('PROJECT_BASE_IMG_URL', default=f'{BASE_URL}/static/img/project')
+
 
 # Host configuration
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='', cast=Csv()) if DEBUG else [
     '.vercel.app',
-    '.ridwaanhall.me',
-    '.ridwaanhall.com',
+    '.mnkdigital.tech',
+    'mnkdigital.tech',
 ]
 
 # ------------------------------------------------------------------------------
@@ -67,7 +70,7 @@ CONTENT_SECURITY_POLICY = {
         'base-uri': [SELF],
         'connect-src': [
             SELF,
-            'ridwaanhall.com',
+            'mnkdigital.tech',
             '*.googleapis.com',
             'https://api.web3forms.com',
             'api.web3forms.com',
@@ -75,7 +78,7 @@ CONTENT_SECURITY_POLICY = {
         'default-src': [SELF],
         'font-src': [
             SELF,
-            'ridwaanhall.com',
+            'mnkdigital.tech',
             '*.gstatic.com',
         ],
         'form-action': [
@@ -89,7 +92,7 @@ CONTENT_SECURITY_POLICY = {
         ],
         'img-src': [
             SELF,
-            'ridwaanhall.com',
+            'mnkdigital.tech',
             'data:',
             BLOG_BASE_IMG_URL,
             PROJECT_BASE_IMG_URL,
@@ -104,7 +107,7 @@ CONTENT_SECURITY_POLICY = {
         'script-src': [
             SELF,
             UNSAFE_INLINE,
-            'ridwaanhall.com',
+            'mnkdigital.tech',
             'static.cloudflareinsights.com',
             '*.googleapis.com',
             'cdn.jsdelivr.net',
@@ -112,7 +115,7 @@ CONTENT_SECURITY_POLICY = {
         'style-src': [
             SELF,
             UNSAFE_INLINE,
-            'ridwaanhall.com',
+            'mnkdigital.tech',
             '*.googleapis.com',
             '*.gstatic.com',
             'cdn.jsdelivr.net',
@@ -163,8 +166,11 @@ APPEND_SLASH = True  # Automatically redirect URLs without trailing slash
 # ------------------------------------------------------------------------------
 
 # Feature toggles
-GUESTBOOK_PAGE = config('GUESTBOOK_PAGE', default=True, cast=bool)
+GUESTBOOK_PAGE = True
 WSRV_IMAGE_OPTIMIZATION = config('WSRV_IMAGE_OPTIMIZATION', default=True, cast=bool)
+WSRV_DEFAULT_WIDTH = config('WSRV_DEFAULT_WIDTH', default=0, cast=int)
+WSRV_DEFAULT_HEIGHT = config('WSRV_DEFAULT_HEIGHT', default=0, cast=int)
+
 
 INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
@@ -187,6 +193,9 @@ INSTALLED_APPS = [
     'apps.projects',
     'apps.blog',
     'apps.seo',
+
+    #AI assistant app
+    'apps.axion_v1',
 ]
 
 # Conditionally add authentication and guestbook apps

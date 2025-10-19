@@ -1,5 +1,5 @@
 """
-Project #48: MLBB Draft Assistant
+Project #49: SistemInformasiPengelolanAset
 Generated from centralized projects data
 """
 
@@ -7,37 +7,36 @@ from datetime import datetime
 from django.conf import settings
 from apps.data.about.skills_data import SkillsData
 
-# Project data for: MLBB Draft Assistant
+# Project data for: GetStage
 project_data = {
     "id": 48,
-    "title": """MLBB Draft Assistant""",
-    "headline": """Level up your Mobile Legends draft phase with ML-powered hero recommendations and counter picks.""",
-    "description": [
-        'Crack the draft code with a slick command-line tool that analyzes your team’s picks and bans, then serves up smart hero suggestions.',
-        'Powered by synergy and counter data, it’s your edge in every match—predictive smarts in real time.',
-        'Handles hero names or IDs effortlessly, no sweat on formatting.',
-        'Train the model once, then unleash blazing-fast predictions with clean table output.',
-        'Ideal for solo strategists or squads wanting next-gen drafting clarity.'
-    ],
+    "title": """Sistem Informasi Pengelolan Aset""",
+    "headline": """Web-based asset management system with Laravel & Filament Admin Panel""",
+    "description": ['Aplikasi ini merupakan sistem informasi untuk mengelola aset perusahaan berbasis web.', "Memfasilitasi pencatatan, pelacakan, pengajuan, dan transfer aset antar cabang.", 'Menggunakan Laravel dengan Filament Admin Panel dan MySQL untuk backend-data yang aman dan terstruktur.'],
     "images": {
-        "mlbb_draft_assistant_preview.webp": f"{settings.PROJECT_BASE_IMG_URL}/mlbb_draft_assistant_preview.webp"
+        "pengelolaan_aset.jpg": f"{settings.PROJECT_BASE_IMG_URL}/pengelolaan_aset.jpg"
     },
     "is_featured": False,
-    "features": [
-        {'title': 'Smart Draft Picks', 'description': 'Pinpoint heroes that synergize or counter with precision.'},
-        {'title': 'Flexible Input', 'description': 'Supports case-insensitive hero names and IDs with relaxed formatting.'},
-        {'title': 'Speedy Predictions', 'description': 'Trained once, reused often. Fast suggestions in every draft.'}
-    ],
+    "features": [{'title': 'Kelola Aset (Barang)', 'description': 'CRUD data barang/aset perusahaan agar tercatat dan terkelola dengan baik.'}, {'title': 'Kelola Cabang & User', 'description': 'Manajemen cabang perusahaan dan user sesuai peran: GA (pusat) dan PIC (per cabang).'}, {'title': 'Request & Transfer Barang', 'description': 'Customizable admin interface with dynamic logo and content management tools.'}],
     "tech_stack": [
-        SkillsData.tech_stack["python"],
-        SkillsData.tech_stack["scikitlearn"],
-        SkillsData.tech_stack["pandas"]
+        SkillsData.tech_stack["laravel"],
+        SkillsData.tech_stack["php"],
+        SkillsData.tech_stack["mysql"],
+
     ],
-    "github_url": "https://github.com/ridwaanhall/mlbb-draft-assistant",
+    "github_url": "https://github.com/ardifx01/sistem-informasi-pengelolan-aset",
     "demo_url": "",
     "status": "completed",
-    "created_at": datetime.strptime("2025-06-17T21:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "updated_at": datetime.strptime("2025-06-17T21:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "category": "gaming",
-    "tags": ["mlbb", "draft", "assistant", "command-line", "machine learning", "gaming"],
+    "created_at": None,
+    "updated_at": datetime.strptime("2025-09-05T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "category": "Asset Management, Internal Tools, Company System",
+    "tags": [
+        "Laravel",
+        "Filament",
+        "Asset Management",
+        "MySQL",
+        "Web App"
+    ],
+    "priority": 1,
+    "slug": ""
 }

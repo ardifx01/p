@@ -1,112 +1,143 @@
+"""
+Blog Post #18: Cybersecurity — Menjaga Informasi Tetap Aman di Dunia Online 
+Diterjemahkan dan disusun ulang untuk pembaca umum dan IT enthusiast. Format konsisten dengan blog sebelumnya.
+"""
+
 from datetime import datetime
 from django.conf import settings
 
-# Blog data for: Project Priority: What It Is and How to Master It
+# Blog data for: Cybersecurity — Menjaga Informasi Tetap Aman di Dunia Online
 blog_data = {
-    "id": 18,
-    "title": "Project Priority: What It Is and How to Master It",
-    "description": "Learn how to prioritize projects effectively based on urgency, complexity, and impact to stay focused and meet deadlines.",
+    "id": 18, 
+    "title": """Cybersecurity — Menjaga Informasi Tetap Aman di Dunia Online""",
+    "description": """Ringkas, praktis, dan modern: konsep dasar, ancaman umum, praktik terbaik, serta alur respons insiden agar tetap aman saat online.""",
     "images": {
-        "project_priority_mastery.webp": f"{settings.BLOG_BASE_IMG_URL}/project_priority_mastery.webp",
-        "project_priority_mastery_2.webp": f"{settings.BLOG_BASE_IMG_URL}/project_priority_mastery_2.webp"
+        "cybersecurity_safe_online.jpg": f"{settings.BLOG_BASE_IMG_URL}/cybersecurity_safe_online.jpg" 
     },
-    "created_at": datetime.strptime("2025-07-07T19:17:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "updated_at": datetime.strptime("2025-07-22T14:29:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "author": "Ridwan Halim",
-    "username": "roneha",
-    "author_image": f"{settings.BASE_URL}/static/img/ridwaanhall.webp",
+    "created_at": datetime.strptime("2025-10-21T18:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "updated_at": datetime.strptime("2025-10-21T18:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "author": "dhiff",
+    "username": "dhiff",
+    "author_image": f"{settings.BASE_URL}/static/img/pp.jpg",
+
     "content": [
         {
             "type": "p",
             "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Choosing which project to tackle first can feel overwhelming—especially when every task seems urgent, complex, or high stakes. But learning how to prioritize projects effectively is not just a skill; it's a strategic advantage that helps you stay focused, on-time, and impactful."
+            "text": "Keamanan siber adalah serangkaian praktik dan kontrol untuk melindungi data, akun, dan perangkat dari akses tidak sah, kebocoran, dan penyalahgunaan. Artikel ini merangkum fondasi penting, ancaman umum, praktik terbaik yang bisa langsung diterapkan, hingga alur tanggapan insiden."
+        },
+
+        {
+            "type": "h2",
+            "class": "text-xl lg:text-2xl text-medium mt-5 mb-3",
+            "text": "Visualisasi Konsep"
         },
         {
-            "type": "h3",
-            "class": "text-lg md:text-xl lg:text-2xl font-semibold mb-3 mt-6",
-            "text": "🧩 Why Project Prioritization Matters"
+            "type": "img",
+            "src": f"{settings.BLOG_BASE_IMG_URL}/cybersecurity_safe_online.svg",
+            "class": "rounded-xl border border-zinc-700 my-4 shadow-lg",
+            "alt": "Infografik ringkas: CIA Triad, ancaman umum, praktik terbaik, dan alur tanggapan insiden"
         },
+
         {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Project prioritization is the process of organizing tasks based on urgency, difficulty, and potential impact. Without it, you risk wasting valuable energy on low-impact projects or missing critical deadlines. In fact, managing priorities well is often the difference between feeling productive and feeling stuck."
-        },
-        {
-            "type": "h3",
-            "class": "text-lg md:text-xl lg:text-2xl font-semibold mb-3 mt-6",
-            "text": "⏱️ Time Management Is Your First Tool"
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Good time management opens the door to effective prioritization. When you allocate your time intentionally, it becomes easier to determine which projects should take precedence. Think of time as your resource map—and priority as your compass."
-        },
-        {
-            "type": "h3",
-            "class": "text-lg md:text-xl lg:text-2xl font-semibold mb-3 mt-6",
-            "text": "🔍 Key Factors to Consider"
+            "type": "h2",
+            "class": "text-xl lg:text-2xl text-medium mt-5 mb-3",
+            "text": "CIA Triad: Kerangka Utama"
         },
         {
             "type": "p",
-            "class": "mb-3 text-sm md:text-base lg:text-lg",
-            "text": "To prioritize projects wisely, ask yourself:"
+            "class": "mb-3",
+            "text": "• Confidentiality: hanya pihak berwenang yang boleh mengakses data. Contoh: enkripsi, MFA, kontrol akses. <br>• Integrity: data tidak diubah tanpa izin. Contoh: hashing, tanda tangan digital, kontrol versi. <br>• Availability: layanan dan data tetap tersedia saat dibutuhkan. Contoh: backup, HA, DR, pemantauan kapasitas."
+        },
+
+        {
+            "type": "h2",
+            "class": "text-xl lg:text-2xl text-medium mt-5 mb-3",
+            "text": "Ancaman Umum yang Perlu Diwaspadai"
         },
         {
             "type": "ul",
-            "class": "mb-4 pl-6 list-disc",
+            "class": "list-disc pl-6 space-y-1",
             "items": [
-                {
-                    "type": "li",
-                    "class": "text-sm md:text-base lg:text-lg",
-                    "text": "<strong>Deadline pressure:</strong> Which project is due the soonest?"
-                },
-                {
-                    "type": "li",
-                    "class": "text-sm md:text-base lg:text-lg",
-                    "text": "<strong>Complexity level:</strong> Which task requires more time or deeper focus?"
-                },
-                {
-                    "type": "li",
-                    "class": "text-sm md:text-base lg:text-lg",
-                    "text": "<strong>Consequences of delay:</strong> What happens if a certain project isn't completed on time?"
-                }
+                "Phishing dan rekayasa sosial yang menipu pengguna memasukkan kredensial.",
+                "Malware, ransomware, dan trojan yang mengenkripsi atau mencuri data.",
+                "Credential stuffing dan brute force karena kata sandi lemah atau daur ulang.",
+                "Kebocoran data akibat konfigurasi salah pada bucket/storage dan layanan publik.",
+                "Serangan supply chain lewat dependensi/SDK berbahaya dan update palsu."
             ]
         },
+
+        {
+            "type": "h2",
+            "class": "text-xl lg:text-2xl text-medium mt-5 mb-3",
+            "text": "Praktik Terbaik yang Bisa Langsung Diterapkan"
+        },
+        {
+            "type": "ul",
+            "class": "list-disc pl-6 space-y-1",
+            "items": [
+                "Aktifkan MFA/2FA pada email, cloud, banking, dan akun inti.",
+                "Gunakan password manager dan passphrase unik panjang.",
+                "Update OS, browser, aplikasi; terapkan patch rutin.",
+                "Selalu pakai HTTPS/TLS; gunakan VPN tepercaya pada jaringan publik.",
+                "Backup 3-2-1 dan uji pemulihan berkala.",
+                "Prinsip least privilege, segmentasi jaringan, dan pendekatan Zero Trust.",
+                "Waspadai tautan/lampiran mencurigakan; verifikasi sumber.",
+                "Pantau login aktif, lokasi perangkat, dan revoke session mencurigakan."
+            ]
+        },
+
+        {
+            "type": "h2",
+            "class": "text-xl lg:text-2xl text-medium mt-5 mb-3",
+            "text": "Checklist Hardening Cepat"
+        },
+        {
+            "type": "ul",
+            "class": "list-disc pl-6 space-y-1",
+            "items": [
+                "Nonaktifkan layanan yang tidak diperlukan di perangkat/VM.",
+                "Batasi port inbound dengan firewall; gunakan allowlist ketat.",
+                "Aktifkan disk/file encryption pada laptop dan ponsel.",
+                "Pisahkan akun admin dan akun harian.",
+                "Audit izin aplikasi pihak ketiga secara berkala."
+            ]
+        },
+
+        {
+            "type": "h2",
+            "class": "text-xl lg:text-2xl text-medium mt-5 mb-3",
+            "text": "Alur Tanggapan Insiden (IR) yang Disarikan"
+        },
+        {
+            "type": "ol",
+            "class": "list-decimal pl-6 space-y-1",
+            "items": [
+                "Identifikasi: deteksi indikasi kompromi, klasifikasikan keparahan.",
+                "Isolasi: putus koneksi/akun bermasalah untuk mencegah penyebaran.",
+                "Analisis: kumpulkan artefak, log, dan indikator kompromi.",
+                "Pemulihan: pulihkan layanan/data secara bertahap dengan verifikasi integritas.",
+                "Perkuatan: patch, rotate secrets, perbaiki kontrol yang lemah.",
+                "Postmortem: dokumentasi akar masalah, perbarui SOP, edukasi tim."
+            ]
+        },
+
+        {
+            "type": "h2",
+            "class": "text-xl lg:text-2xl text-medium mt-5 mb-3",
+            "text": "Kesimpulan"
+        },
         {
             "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "I typically prioritize projects with the nearest deadlines. Once that's done, I assess difficulty and consequence. Why? Because sometimes, the most challenging project also has the highest stakes—especially if it affects a client, team, or larger mission."
-        },
-        {
-            "type": "h3",
-            "class": "text-lg md:text-xl lg:text-2xl font-semibold mb-3 mt-6",
-            "text": "🛠️ Strategic Approach to Decision-Making"
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Understanding <em>who</em> the project serves helps shape your strategy. If a complex project has major consequences and limited time to complete, it's worth rethinking your workflow. Break it down, find collaborators, or adjust expectations—but never ignore the time-pressure factor."
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Balancing all these dimensions ensures that by the end of your timeline, your work hits three essential marks: <strong>on time</strong>, <strong>on target</strong>, and <strong>realistic—not necessarily perfect</strong>."
-        },
-        {
-            "type": "h3",
-            "class": "text-lg md:text-xl lg:text-2xl font-semibold mb-3 mt-6",
-            "text": "🌱 Final Thought: Prioritization Fuels Progress"
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Project prioritization isn't about chasing perfection. It's about optimizing your process so you can show up consistently and complete what matters most. With every project you rank and execute strategically, you build stronger habits for long-term success."
+            "class": "mb-2",
+            "text": "Keamanan siber bukan satu alat, melainkan kebiasaan dan kontrol berlapis. Mulai dari MFA, password manager, pembaruan rutin, hingga backup dan Zero Trust. Bangun kebiasaan aman, latih kewaspadaan, dan siap dengan rencana pemulihan."
         }
     ],
+
     "is_featured": False,
-    "tags": ['Project Management', 'Productivity', 'Time Management', 'Strategic Planning', 'Work Efficiency'],
-    "category": "Productivity & Strategy",
-    "read_time": 4,
+    "tags": ["Cybersecurity", "Privacy", "MFA", "Zero Trust", "Backup", "Incident Response"],
+    "category": "Security",
+    "read_time": 8,
     "views": 0,
-    "slug": "project-priority-what-it-is-and-how-to-master-it"
+    "slug": "cybersecurity-keeping-information-safe-online"
 }

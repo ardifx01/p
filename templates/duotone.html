@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brave Pink x Hero Green</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: #fff;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    #bgCanvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+
+    .title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 2.5rem;
+      background: #E480B8;
+      color: #000;
+      padding: 0.7rem 1.5rem;
+      border: 4px solid #000;
+      box-shadow: 6px 6px 0px #000;
+      display: inline-block;
+      transform: rotate(-1deg);
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .subtitle {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      background: #9ae6b4;
+      color: #000;
+      padding: 0.8rem 1.2rem;
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0px #000;
+      display: inline-block;
+      transform: rotate(1deg);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .upload-box {
+      border: 3px dashed #000;
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      text-align: center;
+      background: #fff;
+      max-width: 600px;
+      width: 100%;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin-bottom: 2rem;
+    }
+    .upload-box.dragover {
+      border-color: #E480B8;
+      background: #fdf0f6;
+    }
+    .upload-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2E633C, #E480B8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem auto;
+      box-shadow: 4px 4px 0px #000;
+    }
+    .upload-icon span {
+      font-size: 32px;
+      color: #fff;
+    }
+    .upload-box h2 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    .upload-box p {
+      color: #444;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+    .upload-btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      border: 3px solid #000;
+      background: #E480B8;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 4px 4px 0px #000;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .upload-btn:hover {
+      background: #B67999;
+      transform: translate(-3px, -3px);
+      box-shadow: 6px 6px 0px #000;
+    }
+    .upload-info {
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
+      color: #444;
+    }
+    input[type="file"] {
+      display: none;
+    }
+
+    canvas#canvas {
+      display: block;
+      margin: 1rem auto 0 auto;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid #000;
+      box-shadow: 8px 8px 0px #000;
+      background: #fff;
+      border-radius: 8px;
+    }
+
+    .action-buttons {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: 3px solid #000;
+      cursor: pointer;
+      background: #2E633C;
+      color: #fff;
+      box-shadow: 4px 4px 0px #000;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #586A58;
+      transform: translate(-3px, -3px);
+      box-shadow: 6px 6px 0px #000;
+    }
+    #deleteBtn {
+      background: #E480B8;
+    }
+    #deleteBtn:hover {
+      background: #B67999;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem 0;
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: #000;
+      text-align: center;
+    }
+    footer a {
+      text-decoration: none;
+      font-weight: bold;
+      animation: blinkColors 2s infinite;
+    }
+    @keyframes blinkColors {
+      0%   { color: #E480B8; }
+      33%  { color: #2E633C; }
+      66%  { color: black; }
+      100% { color: #E480B8; }
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 1rem; }
+      .title { font-size: 1.8rem; padding: 0.5rem 1rem; }
+      .subtitle { font-size: 0.9rem; padding: 0.6rem 1rem; line-height: 1.4; }
+      .upload-box { padding: 2rem 1rem; }
+      .upload-icon { width: 60px; height: 60px; }
+      .upload-icon span { font-size: 24px; }
+      button { font-size: 0.9rem; padding: 0.6rem 1rem; }
+      footer { font-size: 0.8rem; }
+    }
+    @media (max-width: 480px) {
+      .title { font-size: 1.4rem; }
+      .subtitle { font-size: 0.8rem; }
+      .upload-box h2 { font-size: 1rem; }
+      .upload-box p { font-size: 0.8rem; }
+      footer { font-size: 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <div class="title">Brave Pink x Hero Green #1312</div>
+  <div class="subtitle">
+    Ubah Foto anda menjadi Brave Pink dan Hero Green<br>
+    sebagai bentuk unjuk rasa terhadap rusaknya tata kelola pemerintahan di Indonesia
+  </div>
+
+  <div class="upload-box" id="uploadBox">
+    <div class="upload-icon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image w-8 h-8 text-white"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg></span></div>
+    <h2>Drop your image here</h2>
+    <p>or click to browse your files</p>
+    <button class="upload-btn" id="chooseBtn">Choose Image</button>
+    <input type="file" id="fileInput" accept="image/*,.heif,.heic,.jif">
+    <div class="upload-info">Supports JPEG, PNG, WebP, HEIC, JIF<br>Maximum file size: 25MB</div>
+  </div>
+
+  <canvas id="canvas"></canvas>
+  <div class="action-buttons" id="actions" style="display:none;">
+    <button id="download">💾 Download</button>
+    <button id="deleteBtn">🗑 Delete Foto</button>
+  </div>
+
+  <footer>
+    Created by <a href="https://instagram.com/__dhifff" target="_blank">@dhifff</a> <br>© 
+    <span id="year"></span> All rights reserved.
+  </footer>
+
+  <script>
+    // === Particles ===
+    const bgCanvas = document.getElementById('bgCanvas');
+    const bgCtx = bgCanvas.getContext('2d');
+    bgCanvas.width = window.innerWidth;
+    bgCanvas.height = window.innerHeight;
+    let particles = [];
+    class Particle {
+      constructor(x,y){
+        this.x=x; this.y=y;
+        this.vx=(Math.random()-0.5)*1.2;
+        this.vy=(Math.random()-0.5)*1.2;
+        this.r=2+Math.random()*3;
+        this.color=Math.random()>0.5?"#E480B8":"#2E633C";
+      }
+      draw(c){c.beginPath();c.arc(this.x,this.y,this.r,0,Math.PI*2);c.fillStyle=this.color;c.fill();}
+      update(){
+        this.x+=this.vx; this.y+=this.vy;
+        if(this.x<0||this.x>bgCanvas.width) this.vx*=-1;
+        if(this.y<0||this.y>bgCanvas.height) this.vy*=-1;
+        this.draw(bgCtx);
+      }
+    }
+    for(let i=0;i<120;i++) particles.push(new Particle(Math.random()*bgCanvas.width,Math.random()*bgCanvas.height));
+    (function animateBG(){bgCtx.clearRect(0,0,bgCanvas.width,bgCanvas.height);particles.forEach(p=>p.update());requestAnimationFrame(animateBG);})();
+    window.addEventListener("resize",()=>{bgCanvas.width=window.innerWidth;bgCanvas.height=window.innerHeight;});
+
+    // === Upload & Duotone ===
+    const fileInput=document.getElementById('fileInput');
+    const chooseBtn=document.getElementById('chooseBtn');
+    const uploadBox=document.getElementById('uploadBox');
+    const canvas=document.getElementById('canvas');
+    const ctx=canvas.getContext('2d'); ctx.imageSmoothingEnabled=false;
+    const actions=document.getElementById('actions');
+    const downloadBtn=document.getElementById('download');
+    const deleteBtn=document.getElementById('deleteBtn');
+    let img=null,originalFileName="image";
+
+    const palette=[{r:46,g:99,b:60},{r:88,g:106,b:88},{r:161,g:118,b:138},{r:182,g:121,b:153},{r:228,g:128,b:184}];
+
+    chooseBtn.onclick=(e)=>{e.stopPropagation();fileInput.click();};
+    uploadBox.onclick=(e)=>{if(e.target!==chooseBtn) fileInput.click();};
+    uploadBox.ondragover=(e)=>{e.preventDefault();uploadBox.classList.add("dragover");};
+    uploadBox.ondragleave=()=>uploadBox.classList.remove("dragover");
+    uploadBox.ondrop=(e)=>{e.preventDefault();uploadBox.classList.remove("dragover");fileInput.files=e.dataTransfer.files;fileInput.dispatchEvent(new Event("change"));};
+
+    fileInput.addEventListener('change',async e=>{
+      let file=e.target.files[0]; if(!file) return;
+      const baseName=file.name.replace(/\.[^/.]+$/,""); originalFileName=baseName;
+
+      // Convert HEIC/HEIF to JPEG
+      if(file.type==="image/heic"||file.type==="image/heif"||file.name.endsWith(".heic")||file.name.endsWith(".heif")){
+        try{
+          const converted=await heic2any({blob:file,toType:"image/jpeg",quality:0.9});
+          file=new File([converted],baseName+".jpg",{type:"image/jpeg"});
+        }catch(err){alert("Gagal konversi HEIC. Upload JPG/PNG.");return;}
+      }
+
+      const reader=new FileReader();
+      reader.onload=(ev)=>{
+        img=new Image();
+        img.onload=()=>{
+          canvas.width=img.naturalWidth; canvas.height=img.naturalHeight;
+          applyPalette();
+          actions.style.display="flex";
+        };
+        img.src=ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+
+    function applyPalette(){
+      ctx.drawImage(img,0,0);
+      const d=ctx.getImageData(0,0,canvas.width,canvas.height);
+      for(let i=0;i<d.data.length;i+=4){
+        const r=d.data[i],g=d.data[i+1],b=d.data[i+2];
+        const lum=0.2126*r+0.7152*g+0.0722*b;
+        const t=lum/255*(palette.length-1); const idx=Math.floor(t); const frac=t-idx;
+        const c1=palette[idx],c2=palette[Math.min(idx+1,palette.length-1)];
+        d.data[i]=Math.round(c1.r+frac*(c2.r-c1.r));
+        d.data[i+1]=Math.round(c1.g+frac*(c2.g-c1.g));
+        d.data[i+2]=Math.round(c1.b+frac*(c2.b-c1.b));
+      }
+      ctx.putImageData(d,0,0);
+    }
+
+    downloadBtn.onclick=()=>{const a=document.createElement('a');a.download=`${originalFileName} brave-pink-hero-green.jpg`;a.href=canvas.toDataURL("image/jpeg",1.0);a.click();};
+    deleteBtn.onclick=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);canvas.width=canvas.height=0;fileInput.value="";actions.style.display="none";};
+    document.getElementById("year").textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

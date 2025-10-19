@@ -1,326 +1,119 @@
 """
-Blog Post #9: How I Picked the Perfect Domain for My Site
-Generated from centralized blog data
+Blog Post #9: Vibe Coding – Duet Programmer dengan AI 
+Enhanced version with new typography and layout
 """
 
 from datetime import datetime
 from django.conf import settings
 
-# Blog data for: How I Picked the Perfect Domain for My Site
 blog_data = {
-    "id": 9,
-    "title": """How I Picked the Perfect Domain for My Site""",
-    "description": """The wild ride of choosing between .dev, .com, and .id for ridwaanhall.com—here's the tea!""",
+    "id": 9, 
+    "title": "Vibe Coding – Duet Programmer dengan AI",
+    "description": "Sebuah refleksi tentang era baru pemrograman: manusia dan AI berkolaborasi dalam harmoni digital, menciptakan kode yang lebih cepat, cerdas, dan bermakna.",
     "images": {
-        "choosing_domain.webp": f"{settings.BLOG_BASE_IMG_URL}/choosing_domain.webp"
+        "vibe_coding.jpg": f"{settings.BLOG_BASE_IMG_URL}/vibe_coding.jpg" 
     },
-    "created_at": datetime.strptime("2025-04-13T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "updated_at": datetime.strptime("2025-07-22T14:29:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "author": "Ridwan Halim",
-    "username": "roneha",
-    "author_image": f"{settings.BASE_URL}/static/img/ridwaanhall.webp",
+    "created_at": datetime.strptime("2025-10-18T02:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "updated_at": datetime.strptime("2025-10-18T02:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "author": "dhifff",
+    "username": "dhifff",
+    "author_image": f"{settings.BASE_URL}/static/img/pp.jpg",
     "content": [
         {
-            "type": "h2",
-            "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "The Importance of Domain Selection: More Than Just a Web Address"
+            "type": "p",
+            "class": "text-base md:text-lg leading-relaxed tracking-wide mb-6",
+            "text": "Dulu, menjadi programmer berarti begadang di depan monitor, menulis baris demi baris kode hingga mata lelah. Kini, sebagian besar kode itu bisa lahir dari satu baris kalimat. Dunia ini menyebutnya <strong>Vibe Coding</strong> — cara baru di mana manusia dan AI berkolaborasi menciptakan perangkat lunak."
         },
         {
             "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Selecting the perfect domain name for your personal or professional website represents a critical branding decision. The domain extension you choose communicates your site's purpose, audience, and geographic focus. As a developer and content creator, I knew this decision would shape how people perceive my digital presence for years to come."
+            "class": "text-base md:text-lg leading-relaxed tracking-wide mb-6",
+            "text": "Vibe Coding bukan sekadar tren, tapi pergeseran paradigma. Manusia kini berperan sebagai <em>visionary</em> — pengarah konsep, pengambil keputusan, dan penjaga makna. Sedangkan AI menjadi tangan eksekusi, membangun ide manusia menjadi bentuk nyata: baris kode yang hidup."
+        },
+        {
+            "type": "h3",
+            "class": "text-xl font-semibold text-white mt-10 mb-3",
+            "text": "💡 Apa Itu 'Vibe Coding'?"
         },
         {
             "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Building <a href='https://ridwaanhall.com' class='text-blue-600 hover:underline'>ridwaanhall.com</a> wasn't just about code—it was about giving it a vibe that truly represented my work and personality. Picking the right domain extension was a significant investment in my personal brand, so I carefully weighed <span class='text-green-600'>.dev</span>, <span class='text-blue-600'>.com</span>, and <span class='text-red-600'>.id</span> options before making my final choice."
+            "class": "text-base md:text-lg leading-relaxed tracking-wide mb-6",
+            "text": "Istilah 'vibe' muncul karena cara kerjanya terasa alami — mengalir seperti percakapan. Kamu mengetik ide: <em>“Buat API login dengan JWT dan middleware auth.”</em> Lalu AI menulis seluruh strukturnya, melengkapi setiap fungsi dan validasi input. Kamu meninjau, lalu memperbaiki bagian yang tidak sesuai. Alurnya terasa seperti berdialog dengan rekan kerja, bukan dengan mesin."
         },
         {
-            "type": "h2",
-            "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Evaluating .dev: The Developer-Focused Option"
+            "type": "div",
+            "class": "border-l-4 border-blue-500 bg-[#0d1726] p-4 rounded-lg my-6 italic text-blue-200",
+            "text": "Vibe Coding adalah bentuk komunikasi dua arah antara manusia dan AI — bukan perintah satu arah, melainkan kolaborasi ide dan logika."
         },
         {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "The <span class='text-green-600'>.dev</span> extension, launched by Google in 2019, has quickly become a favorite among web developers, programmers, and tech professionals. It signals technical expertise and innovation."
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "<strong>Pros of choosing .dev:</strong>"
+            "type": "h3",
+            "class": "text-xl font-semibold text-white mt-10 mb-3",
+            "text": "🚀 Keuntungan Utama"
         },
         {
             "type": "ul",
-            "class": "list-disc pl-5 mb-4 text-sm md:text-base lg:text-lg",
+            "class": "list-disc list-inside space-y-3 text-base md:text-lg leading-relaxed mb-6",
             "items": [
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Instantly communicates technical credibility"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Perfect showcase for coding projects and developer portfolios"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Creates immediate association with the tech community"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "HTTPS security by default (all .dev domains require HTTPS)"
-                }
+                "<strong>Efisiensi Waktu:</strong> Pembuatan kode bisa dipangkas hingga 70%.",
+                "<strong>Kreativitas Tanpa Batas:</strong> Kamu fokus pada ide, bukan sintaks.",
+                "<strong>Kolaborasi Instan:</strong> AI bisa menjadi rekan diskusi sekaligus penguji logika.",
+                "<strong>Belajar Cepat:</strong> Developer pemula bisa memahami pola kode dari hasil AI."
             ]
         },
         {
+            "type": "h3",
+            "class": "text-xl font-semibold text-white mt-10 mb-3",
+            "text": "⚠️ Risiko dan Tantangan"
+        },
+        {
             "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "<strong>Cons of considering .dev:</strong>"
+            "class": "text-base md:text-lg leading-relaxed tracking-wide mb-6",
+            "text": "Ketika terlalu bergantung pada AI, kemampuan berpikir algoritmik bisa tumpul. Tanpa dasar yang kuat, programmer berisiko menerima kode yang salah secara logika namun tampak benar secara sintaks."
+        },
+        {
+            "type": "div",
+            "class": "border-l-4 border-red-500 bg-[#1b0b0b] p-4 rounded-lg my-6 italic text-red-200",
+            "text": "AI tidak memahami visi bisnis atau konteks sosial. Ia menulis sesuai pola, bukan tujuan. Di sinilah manusia tetap menjadi pengarah utama."
+        },
+        {
+            "type": "h3",
+            "class": "text-xl font-semibold text-white mt-10 mb-3",
+            "text": "🧠 Ekosistem Pendukung"
         },
         {
             "type": "ul",
-            "class": "list-disc pl-5 mb-4 text-sm md:text-base lg:text-lg",
+            "class": "list-disc list-inside space-y-3 text-base md:text-lg leading-relaxed mb-6",
             "items": [
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<span class='text-green-600'>.dev</span> screamed coder cred—perfect for flexing my tech projects and geeky posts. But I wanted more than just a dev diary; I'm also into faith, culture, and big ideas, so it felt a bit too narrowly focused for my diverse content goals."
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Potentially less recognizable to non-technical audience members"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Might pigeonhole my site as strictly technical, limiting perceived content scope"
-                }
+                "<strong>GitHub Copilot X</strong> – menulis kode real-time dengan analisis konteks proyek.",
+                "<strong>Cursor IDE</strong> – editor futuristik dengan prompt-based editing.",
+                "<strong>Claude & ChatGPT</strong> – AI untuk brainstorming, refactor, dan dokumentasi otomatis.",
+                "<strong>Tabnine</strong> – AI lokal untuk tim enterprise dengan keamanan tinggi."
             ]
         },
         {
-            "type": "h2",
-            "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Considering .com: The Universal Standard"
+            "type": "h3",
+            "class": "text-xl font-semibold text-white mt-10 mb-3",
+            "text": "🌌 Masa Depan Developer"
         },
         {
             "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "The <span class='text-blue-600'>.com</span> extension, short for \"commercial,\" has been around since 1985 and remains the most recognized domain extension worldwide. Its familiarity carries significant weight in domain selection."
+            "class": "text-base md:text-lg leading-relaxed tracking-wide mb-6",
+            "text": "Di masa depan, developer tidak lagi diukur dari seberapa cepat mengetik, tapi seberapa cerdas mereka berbicara dengan AI. Mereka yang mampu menjelaskan ide dengan jelas akan menjadi penggerak utama industri software."
+        },
+        {
+            "type": "div",
+            "class": "border-l-4 border-green-500 bg-[#10291b] p-4 rounded-lg my-6 italic text-green-200",
+            "text": "Kita sedang menyaksikan pergeseran: dari ‘menulis kode’ menjadi ‘mengarahkan kecerdasan’. Inilah makna sejati dari Vibe Coding."
         },
         {
             "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "<strong>Pros of choosing .com:</strong>"
-        },
-        {
-            "type": "ul",
-            "class": "list-disc pl-5 mb-4 text-sm md:text-base lg:text-lg",
-            "items": [
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Highest recognition factor globally"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Versatile for all types of content and business models"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Easier to remember for most users"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Conveys established, professional presence"
-                }
-            ]
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Then there's <span class='text-blue-600'>.com</span>—the OG of domain extensions. It's global, flexible, and fits everything from AI tutorials to philosophical musings. It's like the ultimate stage for techies, casual readers, and everyone else, offering the broadest possible appeal for my diverse content plans."
-        },
-        {
-            "type": "h2",
-            "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Analyzing .id: The National Identity Option"
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "The <span class='text-red-600'>.id</span> country code top-level domain (ccTLD) represents Indonesia on the global internet. For Indonesian creators and businesses, it offers a strong geographical connection."
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "<strong>Pros of choosing .id:</strong>"
-        },
-        {
-            "type": "ul",
-            "class": "list-disc pl-5 mb-4 text-sm md:text-base lg:text-lg",
-            "items": [
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Establishes clear Indonesian identity"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Appeals strongly to local Indonesian audience"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Potentially better local SEO for Indonesian searches"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "Supports national digital ecosystem"
-                }
-            ]
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "<span class='text-red-600'>.id</span> hit home as an Indonesian—it's personal, proud, and rooted in my cultural identity. But my site's got global dreams, and I didn't want to geographically limit its perceived reach and relevance to international visitors."
-        },
-        {
-            "type": "h2",
-            "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Domain Name Selection Criteria: What Really Matters"
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "When evaluating domain options, I considered these critical factors:"
-        },
-        {
-            "type": "ul",
-            "class": "list-disc pl-5 mb-4 text-sm md:text-base lg:text-lg",
-            "items": [
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Brand consistency</strong> - How well does the domain align with my personal brand?"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Memorability</strong> - Will people easily remember and type my domain correctly?"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Audience expectations</strong> - What will my target audience expect and prefer?"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Future scalability</strong> - Will this domain accommodate future growth and content evolution?"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>SEO implications</strong> - How might the domain extension affect search visibility?"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Technical considerations</strong> - Are there any technical advantages to specific extensions?"
-                }
-            ]
-        },
-        {
-            "type": "h2",
-            "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Final Decision and Rationale"
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "After weighing all options against my content goals and target audience, I ultimately chose <span class='text-blue-600'>ridwaanhall.com</span>."
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "The decision wasn't just about technical SEO or branding—it was about finding the sweet spot where my identity as a developer, my cultural background, and my diverse content interests could all coexist harmoniously under one digital roof."
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "<span class='text-blue-600'>.com</span> offered the versatility I needed for topics ranging from technical tutorials to cultural explorations, while maintaining global accessibility and recognition. It provides the perfect foundation for a site that aims to welcome visitors from both technical and non-technical backgrounds, regardless of geographical location."
-        },
-        {
-            "type": "h2",
-            "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Key Takeaways for Domain Selection"
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "If you're currently in the process of selecting a domain for your own website, consider these key insights from my experience:"
-        },
-        {
-            "type": "ul",
-            "class": "list-disc pl-5 mb-4 text-sm md:text-base lg:text-lg",
-            "items": [
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Know your audience</strong>: Choose a domain extension that resonates with the people you want to reach"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Consider your content scope</strong>: Select an extension that accommodates all your content types"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Think long-term</strong>: Your domain is a long-term investment in your online identity"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Test for memorability</strong>: Can people easily remember and correctly type your domain?"
-                },
-                {
-                    "type": "li",
-                    "class": "mb-2",
-                    "text": "<strong>Check availability across platforms</strong>: Ensure consistent username availability across social media"
-                }
-            ]
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "The domain selection process may seem overwhelming, but taking time to evaluate your options thoughtfully will pay dividends in building a cohesive online presence that accurately represents your goals and identity."
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Whether you choose a technical extension like <span class='text-green-600'>.dev</span>, a geographic identifier like <span class='text-red-600'>.id</span>, or the versatile standard of <span class='text-blue-600'>.com</span>, the most important factor is alignment with your unique vision and audience needs."
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "What domain extension did you choose for your website, and why? Share your experience in the comments below!"
+            "class": "text-base md:text-lg leading-relaxed tracking-wide mt-8",
+            "text": "Kolaborasi antara manusia dan AI bukan tentang menggantikan siapa pun. Ini tentang menyatukan dua bentuk kecerdasan — logika mesin dan intuisi manusia — menjadi satu harmoni digital."
         }
     ],
-    "is_featured": True,
-    "tags": ['Domains', 'Personal Branding', '.com', '.dev', '.id', 'Web Dev', 'Branding', 'Domain Selection', 'Website Development', 'Online Identity'],
-    "category": "",
-    "read_time": 5,
+    "is_featured": False,
+    "tags": ["AI Programming", "Vibe Coding", "Automation", "Developer Future"],
+    "category": "Programming & AI",
+    "read_time": 8,
     "views": 0,
-    "slug": ""
+    "slug": "vibe-coding-duet-programmer-dengan-ai"
 }

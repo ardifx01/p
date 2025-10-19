@@ -1,95 +1,99 @@
 """
-Blog Post #12: Predicting Gold Prices in Indonesia: AI's Golden Touch
+Blog Post #12: Optimizing Web & Mobile Accessibility
 Generated from centralized blog data
 """
 
 from datetime import datetime
 from django.conf import settings
 
-# Blog data for: Predicting Gold Prices in Indonesia: AI's Golden Touch
+# Blog data for: Optimizing Web & Mobile Accessibility
 blog_data = {
     "id": 12,
-    "title": """Predicting Gold Prices in Indonesia: AI's Golden Touch""",
-    "description": """Gold price forecasting in Indonesia just got smarter! Dive into how AI-powered LSTM models are transforming historical data into actionable insights for investors and analysts.""",
+    "title": """Optimizing Web & Mobile Accessibility""",
+    "description": """Panduan praktis membangun pengalaman web dan aplikasi mobile yang inklusif dengan prinsip aksesibilitas modern (a11y) – untuk semua pengguna, tanpa kecuali.""",
     "images": {
-        "gold_price_prediction.webp": f"{settings.BLOG_BASE_IMG_URL}/gold_price_prediction.webp"
+        "blog.jpg": f"{settings.BLOG_BASE_IMG_URL}/blog.jpg" 
     },
-    "created_at": datetime.strptime("2025-04-23T22:20:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "updated_at": datetime.strptime("2025-07-22T14:29:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "author": "Ridwan Halim",
-    "username": "roneha",
-    "author_image": f"{settings.BASE_URL}/static/img/ridwaanhall.webp",
+    "created_at": datetime.strptime("2025-10-17T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "updated_at": datetime.strptime("2025-10-17T13:45:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "author": "dhiff", 
+    "username": "dhiff", 
+    "author_image": f"{settings.BASE_URL}/static/img/pp.jpg", 
     "content": [
         {
             "type": "p",
             "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Artificial intelligence has revolutionized financial forecasting across global markets, including Indonesia's precious metals sector. By applying advanced machine learning techniques to historical data, analysts and investors can now access more accurate price predictions, helping them make more informed decisions in this traditionally volatile market."
+            "text": "Aksesibilitas web dan mobile (a11y) berarti memastikan situs serta aplikasi dapat digunakan oleh semua orang, termasuk mereka dengan keterbatasan penglihatan, pendengaran, motorik, maupun kognitif. Prinsip ini bukan sekadar tambahan, melainkan bagian dari tanggung jawab sosial dalam desain digital."
         },
         {
             "type": "h2",
             "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "The Revolution in Gold Price Forecasting"
+            "text": "Mengapa Aksesibilitas Penting?"
         },
         {
             "type": "p",
             "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "<span class='text-purple-600'>Gold price prediction</span> is the next big flex for Indonesia's market scene! With AI-powered LSTM models, we're crunchin' 10+ years of data to forecast trends that investors can bank on. Wanna know how it works? Check my blog at <span class='text-blue-600'>ridwaanhall.com</span> for the full scoop!"
+            "text": "Lebih dari satu miliar orang di dunia hidup dengan disabilitas, dan aksesibilitas digital membuka peluang yang sama bagi mereka untuk berinteraksi, belajar, dan bekerja. Selain itu, web yang aksesibel cenderung lebih SEO-friendly, memiliki pengalaman pengguna lebih baik, dan menghindarkan dari pelanggaran hukum di negara tertentu."
         },
         {
             "type": "h2",
             "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "How Modern Gold Price Prediction Works"
+            "text": "Empat Prinsip Utama: POUR"
         },
         {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "<span class='text-blue-600'>What's the deal with gold price prediction?</span> Straight-up, it's about using deep learning to analyze historical price patterns and predict future trends. Think next-day prices, short-term vibes (1-6 months), and long-term outlooks (up to 5 years). My model's got interactive plots and exportable data for that extra sauce. Investors in Jakarta are already hyped!"
-        },
-        {
-            "type": "h2",
-            "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Technical Implementation and Innovations"
-        },
-        {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "In 2025, gold price prediction's poppin' off with <span class='text-green-600'>next-level precision</span>. We're talkin' LSTM neural networks that adapt to market volatility and seasonal trends. Plus, the visualizations are clean—dynamic plots that make data analysis a breeze. And don't sleep on the CSV exports; they're perfect for deeper dives into the numbers."
+            "type": "ul",
+            "class": "list-disc pl-6 mb-4 text-sm md:text-base lg:text-lg",
+            "items": [
+                "Perceivable – informasi harus bisa ditangkap oleh semua pengguna, termasuk melalui teks alternatif atau subtitle.",
+                "Operable – antarmuka dapat dikontrol oleh berbagai input seperti keyboard, suara, atau sentuhan.",
+                "Understandable – navigasi dan bahasa mudah dimengerti, instruksi jelas.",
+                "Robust – konten dapat dibaca oleh berbagai teknologi bantu dan browser."
+            ]
         },
         {
             "type": "h2",
             "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Limitations and Considerations"
+            "text": "Langkah Praktis untuk Web & Mobile"
         },
         {
-            "type": "p",
-            "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "But here's the tea: forecasting isn't foolproof. Market shocks and black swan events can throw predictions off. That's why my model focuses on trends rather than exact prices for long-term forecasts. It's all about staying informed and adaptable in a fast-changing market."
+            "type": "ul",
+            "class": "list-disc pl-6 mb-4 text-sm md:text-base lg:text-lg",
+            "items": [
+                "Gunakan struktur heading <h1>–<h3> secara hierarkis, bukan hanya untuk styling.",
+                "Tambahkan teks alternatif (alt text) pada semua gambar.",
+                "Pastikan kontras warna antara teks dan latar cukup tinggi.",
+                "Sediakan navigasi berbasis keyboard.",
+                "Ukuran tombol dan link cukup besar untuk tap pada layar kecil.",
+                "Form memiliki label dan pesan kesalahan yang deskriptif.",
+                "Multimedia seperti video memiliki subtitle atau transkrip.",
+                "Desain harus responsif dan adaptif terhadap perubahan orientasi dan zoom."
+            ]
         },
         {
             "type": "h2",
             "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "Practical Applications for Investors"
+            "text": "Tantangan dan Praktik Terbaik"
         },
         {
             "type": "p",
             "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "So, how do you <span class='text-purple-600'>leverage gold price predictions</span>? Use the insights to make smarter investment decisions. Whether you're a trader, analyst, or just curious about the market, this tool's got you covered. Check out <span class='text-blue-600'>ridwaanhall.com</span> for tutorials on using the model and tips for navigating Indonesia's gold market."
+            "text": "Implementasi aksesibilitas membutuhkan konsistensi lintas tim desain dan pengembang. Kadang ada kompromi antara estetika dan fungsi, namun fokus utama tetap pada kemudahan pengguna. Audit rutin dan pengujian langsung dengan pengguna disabilitas membantu memastikan solusi benar-benar efektif."
         },
         {
             "type": "h2",
             "class": "text-xl lg:text-2xl text-medium mt-4 md:mt-5 mb-2 md:mb-3",
-            "text": "The Future of AI in Financial Forecasting"
+            "text": "Kesimpulan"
         },
         {
             "type": "p",
             "class": "mb-4 text-sm md:text-base lg:text-lg",
-            "text": "Real talk: AI's changing the game for gold price forecasting, and you can be part of it. Dive into the data, explore the trends, and make informed moves. Got questions or stories about your investment journey? Drop a comment, fam—let's vibe! 😎"
+            "text": "Aksesibilitas bukan hanya fitur tambahan, tetapi standar etika dalam dunia digital. Dengan mengikuti prinsip POUR dan langkah-langkah praktis di atas, pengembang dapat menciptakan pengalaman web dan aplikasi yang benar-benar inklusif."
         }
     ],
     "is_featured": False,
-    "tags": ['Gold Price Prediction', 'AI Forecasting', 'Deep Learning', 'Market Trends', 'Investment Insights', 'Tech Life', 'Indo Market'],
-    "category": "",
-    "read_time": 5,
+    "tags": ["Accessibility", "Web Development", "Mobile", "UI/UX", "Inclusivity", "Frontend", "Best Practices"],
+    "category": "Technology",
+    "read_time": 6,
     "views": 0,
-    "slug": ""
+    "slug": "web-mobile-accessibility-guide"
 }

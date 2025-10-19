@@ -115,7 +115,7 @@ class SEOSchemaGenerator:
             "jobTitle": job_title,
             "worksFor": works_for,
             "description": about_data.get('short_description', ''),
-            "email": about_data.get('email', 'hi@ridwaanhall.com'),
+            "email": about_data.get('email', 'nadhifkarim89@gmail.com'),
             "alumniOf": alumni_of,
             "knowsAbout": knows_about,
             "workExperience": work_experience
@@ -131,12 +131,13 @@ class SEOSchemaGenerator:
             "description": "Personal portfolio and blog showcasing software development projects, technical insights, and professional journey",
             "inLanguage": "en-US",
             "keywords": [
-                "ridwaanhall",
-                "ridwan halim", 
+                "dhiff",
+                "muhammad nadhif", 
                 "software developer",
                 "web development",
                 "python",
                 "django",
+                "ai engineer",
                 "machine learning",
                 "portfolio"
             ],
@@ -163,9 +164,9 @@ class SEOSchemaGenerator:
                 "name": SEOConfig.AUTHOR,
                 "url": SEOConfig.SITE_URL,
                 "sameAs": [
-                    "https://github.com/ridwaanhall",
-                    "https://linkedin.com/in/ridwaanhall",
-                    "https://twitter.com/ridwaanhall"
+                    "https://github.com/ardifx01",
+                    "https://instagram.com/karimm.js",
+                    "https://twitter.com/el_2083"
                 ]
             }
         })
@@ -506,8 +507,8 @@ class SEOSchemaGenerator:
         return {
             "@context": "https://schema.org",
             "@type": "PrivacyPolicy",
-            "name": "Privacy Policy - ridwaanhall.com",
-            "description": "Comprehensive privacy policy outlining how we collect, use, and protect your personal information on ridwaanhall.com",
+            "name": "Privacy Policy - mnkdigital.tech",
+            "description": "Comprehensive privacy policy outlining how we collect, use, and protect your personal information on mnkdigital.tech",
             "url": f"{SEOConfig.SITE_URL}/privacy-policy/",
             "dateCreated": "2025-03-16",
             "dateModified": datetime.now().strftime("%Y-%m-%d"),

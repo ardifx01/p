@@ -11,7 +11,7 @@ class SEOConfig:
     """Centralized SEO configuration and constants."""
     
     # Default values
-    DEFAULT_TITLE_SUFFIX = "ridwaanhall.com"
+    DEFAULT_TITLE_SUFFIX = "mnkdigital.tech"
     DEFAULT_SEPARATOR = " | "
     DEFAULT_DESCRIPTION_LENGTH = 160
     DEFAULT_KEYWORDS_COUNT = 15
@@ -19,12 +19,12 @@ class SEOConfig:
     # Social media defaults
     DEFAULT_OG_TYPE = "website"
     DEFAULT_TWITTER_CARD = "summary_large_image"
-    DEFAULT_TWITTER_SITE = "@ridwaanhall"
+    DEFAULT_TWITTER_SITE = "@el_2083"
     
     # Site information
-    SITE_NAME = "ridwaanhall.com"
-    AUTHOR = "Ridwan Halim"
-    SITE_URL = getattr(settings, 'BASE_URL', 'https://ridwaanhall.com')
+    SITE_NAME = "mnkdigital.tech"
+    AUTHOR = "Muhammad Nadhif"
+    SITE_URL = getattr(settings, 'BASE_URL', 'https://mnkdigital.tech')
     DEFAULT_IMAGE = f"{SITE_URL}/static/img/default-og-image.webp"
     
     # Content type specific settings
@@ -94,8 +94,8 @@ class SEOConfig:
     # Common keywords by category
     COMMON_KEYWORDS = {
         'personal': [
-            'ridwaanhall', 'roneha', 'Ridwan Halim', 'ridwaanhall.com',
-            'ridwaanhall blog', 'ridwaanhall portfolio',
+            'dhiff', 'Karim', 'Muhammad Nadhif', 'mnkdigital.tech',
+            'blog mnk', 'mnk portfolio',
             'software developer', 'web developer', 'python developer',
             'machine learning engineer', 'AI engineer', 'full stack developer'
         ],

@@ -10,7 +10,7 @@ from apps.data.about.skills_data import SkillsData
 # Project data for: ridwaanhall.me
 project_data = {
     "id": 35,
-    "title": """ridwaanhall.me""",
+    "title": """portfolio v4""",
     "headline": """Next.js portfolio with Once UI, built for speed and global vibes.""",
     "description": ['This Next.js portfolio, rocking Once UI, is optimized for lightning speed, SEO, and worldwide access.', 'Loaded with Server Components, lazy images, and code splitting, it scores 100 on Lighthouse.', 'Supports multiple languages, custom animations, and stays buttery smooth on any device.'],
     "images": {
