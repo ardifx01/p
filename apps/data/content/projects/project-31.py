@@ -56,4 +56,5 @@ project_data = {
     "updated_at": datetime.strptime("2025-09-02T15:10:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
     "category": "productivity",
     "tags": ["filemanager", "cloud-storage", "php", "self-hosted", "open-source", "collaboration", "document-management"],
+    "html": "",
 }

@@ -462,7 +462,7 @@ class SkillsData:
         "angular": {
             "name": "Angular",
             "description": "TypeScript-based web framework maintained by Google",
-            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/angular-original.svg"
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/angularjs-original.svg"
         },
         "vuejs": {
             "name": "Vue.js",
@@ -604,12 +604,12 @@ class SkillsData:
         "angular": {
             "name": "Angular",
             "description": "TypeScript-based framework maintained by Google",
-            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/angular-original.svg"
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/angularjs-original.svg"
         },
         "vue": {
             "name": "Vue.js",
             "description": "Progressive JavaScript framework for building UIs",
-            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/vue-original.svg"
+            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/vuejs-original.svg"
         },
         "nuxtjs": {
             "name": "Nuxt.js",
@@ -809,6 +809,24 @@ class SkillsData:
            "description": "Framework for building native apps with React",
            "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/reactnative-original.svg"
        },
+       "codeigniter": {
+           "name": "CodeIgniter",
+           "description": "Framework for building apps with php",
+           "icon_svg": f"{settings.BASE_URL}/static/svg/icon/skills-icons/icons/codeigniter-original.svg"
+        },
+       "html": {
+    "name": "HTML",
+    "slug": "html",
+    "category": "frontend",
+    "icon_svg": f"{settings.BASE_URL}/static/svg/icon/html5-original.svg",
+},
+"css": {
+    "name": "CSS",
+    "slug": "css",
+    "category": "frontend",
+    "icon_svg": f"{settings.BASE_URL}/static/svg/icon/css3-original.svg",
+},
+
     }
     
     # Legacy list format for backward compatibility

@@ -9,7 +9,7 @@
         <h1 class="text-2xl lg:text-3xl font-medium mb-2 md:mb-3 text-fuchsia-400">{{ blog.title }}</h1>
         <div class="flex items-center gap-2 md:gap-3 mb-4">
           {% if blog.author_image %}
-          <img src="https://wsrv.nl/?url={{ blog.author_image }}&w=50&h=50"
+          <img src="https://wsrv.nl/?url={{ blog.author_image|cut:'https://'|cut:'http://' }}&w=50&h=50"
                alt="{{ blog.author }}"
                class="w-8 h-8 sm:w-9 sm:h-9 rounded-full ring-2 ring-fuchsia-500/60" />
           {% endif %}
@@ -30,7 +30,7 @@
 
       <div class="mb-6 md:mb-8">
         <div class="rounded-xl overflow-hidden shadow-lg border border-fuchsia-600/40 relative">
-          <img src="https://wsrv.nl/?url={{ blog.image_url }}" alt="{{ blog.title }}"
+          <img src="https://wsrv.nl/?url={{ blog.image_url|cut:'https://'|cut:'http://' }}" alt="{{ blog.title }}"
                class="w-full object-cover aspect-video saturate-125" loading="lazy" />
         </div>
       </div>

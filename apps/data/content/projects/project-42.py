@@ -1,5 +1,5 @@
 """
-Project #42: PDDikti Data Vault
+Project #42: LetMeCook Landing Page 
 Generated from centralized projects data
 """
 
@@ -7,41 +7,46 @@ from datetime import datetime
 from django.conf import settings
 from apps.data.about.skills_data import SkillsData
 
-# Project data for: PDDikti Data Vault
+# Project data for: LetMeCook Landing Page
 project_data = {
-    "id": 42,
-    "title": """PDDikti Data Vault""",
-    "headline": """API unlocking Indonesia’s higher education data from PDDikti.""",
-    "description": ['This API pulls fresh, juicy data from PDDikti, Indonesia’s higher ed database, covering universities, programs, and more.', 'Built for researchers and devs, it offers clear endpoints to snag structured info like accreditation stats.', 'Caching and optimizations keep it blazing fast under heavy traffic, with docs that make integration a breeze.'],
+    "id": 42, 
+    "title": "LetMeCook Landing Page",
+    "headline": "Landing page modern untuk platform resep masakan berbasis komunitas.",
+    "description": [
+        "Halaman depan responsif yang dirancang untuk platform LetMeCook — komunitas berbagi resep, tips masak, dan video tutorial.",
+        "Menampilkan modul-hero dengan ajakan bergabung, grid resep unggulan, testimoni pengguna, dan footer dengan langganan newsletter.",
+        "Fokus pada UI/UX bersih dan visual appetising untuk menarik pengunjung baru serta meningkatkan konversi pengguna aktif."
+    ],
     "images": {
-        "api_pddikti_kemendiksaintek.webp": f"{settings.PROJECT_BASE_IMG_URL}/api_pddikti_kemendiksaintek.webp"
+        "letmecook_landing.jpg": f"{settings.PROJECT_BASE_IMG_URL}/letmecook_landing.jpg"
     },
     "is_featured": False,
-    "features": [{'title': 'Edu Data', 'description': 'Easy access to uni and program info.'}, {'title': 'Dev-Friendly', 'description': 'Simple setup for coders.'}, {'title': 'Fresh Stats', 'description': 'Always-updated PDDikti data.'}],
-    "tech_stack": [
-        SkillsData.tech_stack["python"],
-        SkillsData.tech_stack["django"],
-        SkillsData.tech_stack["javascript"],
-        SkillsData.tech_stack["css"]
+    "features": [
+        {"title": "Hero Section & Call to Action", "description": "Bagian atas halaman dengan gambar makanan besar, tombol ‘Gabung Sekarang’, dan highlight keunggulan komunitas."},
+        {"title": "Grid Resep Unggulan", "description": "Tampilan foto resep dengan judul, deskripsi singkat, dan tombol ‘Lihat Resep’."},
+        {"title": "Testimoni & Newsletter", "description": "Bagian testimoni pengguna dan form langganan newsletter di footer untuk meningkatkan engagement."}
     ],
-    "github_url": "https://github.com/ridwaanhall/api-pddikti",
-    "demo_url": "https://pddikti-docs.ridwaanhall.com/",
+    "tech_stack": [
+        SkillsData.tech_stack["html5"],
+        SkillsData.tech_stack["css3"],
+        SkillsData.tech_stack["bootstrap"],
+        SkillsData.tech_stack["javascript"]
+    ],
+    "github_url": "https://github.com/ardifx01/letmecook-landing-page",
+    "demo_url": "",
     "status": "completed",
     "created_at": None,
-    "updated_at": datetime.strptime("2025-07-06T16:51:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "category": "API, Education, Data Integration",
+    "updated_at": datetime.strptime("2025-10-24T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "category": "Landing Page, UI/UX, Frontend",
     "tags": [
-        "API",
-        "PDDikti",
-        "Indonesia",
-        "Higher Education",
-        "Data Integration",
-        "Django",
-        "Python",
-        "Accreditation",
-        "University Data",
-        "Open Data"
+        "Landing Page",
+        "Resep Masakan",
+        "Komunitas",
+        "Bootstrap",
+        "Frontend",
+        "UI/UX"
     ],
-    "priority": 1,
+    "priority": 2,
     "slug": ""
 }
+

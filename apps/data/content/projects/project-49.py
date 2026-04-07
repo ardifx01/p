@@ -1,5 +1,5 @@
 """
-Project #49: El-Perintis
+Project #49: Sistem Pembelajaran Daring UNTAGSMG 
 Generated from centralized projects data
 """
 
@@ -7,38 +7,44 @@ from datetime import datetime
 from django.conf import settings
 from apps.data.about.skills_data import SkillsData
 
-# Project data for: El-Perintis
+# Project data for: Sistem Pembelajaran Daring UNTAGSMG
 project_data = {
-    "id": 49,
-    "title": """El-Perintis""",
-    "headline": """A philosophical simulation about building from scratch versus continuing a legacy, through Python code and a narrative of struggle.""",
+    "id": 49, 
+    "title": "Sistem Pembelajaran Daring UNTAGSMG",
+    "headline": "Platform pembelajaran daring untuk mahasiswa dan dosen di UNTAG Semarang.",
     "description": [
-        'This repository explores the philosophy of building from scratch (pioneer) and continuing a legacy (inheritor) through two approaches: OOP and non-OOP.',
-        'The `perintis` branch contains an OOP-based simulation depicting the struggle of building a new foundation.',
-        'The `pewaris` branch contains a non-OOP approach that continues the old pattern with adaptation and reflection.',
-        'The narrative of struggle is written dynamically through Python functions and a simple API endpoint.',
-        'Inspired by the story of Ryu Kintaro and the dilemma between writing your own destiny or keeping the flame that has already been lit.'
+        "Platform ini dibangun sebagai sistem pembelajaran daring (LMS) untuk Universitas 17 Agustus 1945 Semarang (UNTAG SMG).",
+        "Mulai digunakan sejak awal 2020 dan diperbarui kembali versi LMS-terbarunya pada 2024. :contentReference[oaicite:2]{index=2}",
+        "Fitur utama meliputi akses kursus per fakultas/jurusan/semester, berbagai format materi pembelajaran, sistem akun mahasiswa & dosen, pengumuman akademik, dan pengelolaan kelas serta konten pembelajaran. :contentReference[oaicite:3]{index=3}"
     ],
     "images": {
-        "el_perintis_preview.webp": f"{settings.PROJECT_BASE_IMG_URL}/el_perintis_preview.webp",
-        # "el_perintis.webp": f"{settings.PROJECT_BASE_IMG_URL}/el_perintis.webp"
+        "spada.jpg": f"{settings.PROJECT_BASE_IMG_URL}/spada.jpg" 
     },
-    "is_featured": True,
+    "is_featured": False,
     "features": [
-        {'title': 'OOP vs non-OOP Simulation', 'description': 'The `perintis` branch uses OOP to build a new foundation, while `pewaris` continues the existing system procedurally.'},
-        {'title': 'Struggle Narrative', 'description': 'Python functions illustrate the journey, failures, and victories in a social and personal context.'},
-        {'title': 'Simple API', 'description': 'FastAPI endpoint to generate the struggle narrative dynamically and contextually.'}
+        {"title": "Akses Kursus Terintegrasi", "description": "Mahasiswa dan dosen dapat mengakses kursus dari berbagai fakultas, jurusan, dan semester."},
+        {"title": "Materi Multi-Format", "description": "Materi pembelajaran tersedia dalam beragam format untuk mendukung proses belajar fleksibel."},
+        {"title": "Manajemen Pengguna & Kelas", "description": "Sistem login akun mahasiswa & dosen, pengelolaan kelas, konten, dan pengumuman akademik."}
     ],
     "tech_stack": [
-        SkillsData.tech_stack["python"],
-        SkillsData.tech_stack["fastapi"],
-        SkillsData.tech_stack["pytest"]
-    ],
-    "github_url": "https://github.com/ridwaanhall/el-perintis",
+        SkillsData.tech_stack["php"],
+        SkillsData.tech_stack["javascript"],
+        SkillsData.tech_stack["mysql"],
+     ], 
+    "github_url": "https://github.com/ardifx01/sistem-pembelajaran-daring-untagsmg",
     "demo_url": "",
-    "status": "completed",
-    "created_at": datetime.strptime("2025-07-31T21:40:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "updated_at": datetime.strptime("2025-08-01T04:40:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "category": "education",
-    "tags": ["pioneer", "inheritor", "philosophy", "narrative", "python", "oop", "api", "ryu-kintaro", "legacy", "simulation"],
+    "status": "in-progress",
+    "created_at": None,
+    "updated_at": datetime.strptime("2024-01-01T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "category": "E-Learning, LMS, Akademik",
+    "tags": [
+        "E-Learning",
+        "LMS",
+        "Akademik",
+        "Open Source",
+        "PHP",
+        "JavaScript"
+    ],
+    "priority": 1,
+    "slug": ""
 }

@@ -4,7 +4,7 @@ class EducationData:
     education = [
         {
             "degree": "Senior High School",
-            "years": "2020-2022",
+            "years": "2020-2023",
             "institution": "SMK NEGERI 1 BATANG",
             "website": "https://smkn1batang.sch.id/",
             "logo": f"{settings.BASE_URL}/static/img/logo/smk.jpg",

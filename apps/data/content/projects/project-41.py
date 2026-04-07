@@ -1,5 +1,5 @@
 """
-Project #41: MLBB API Stats Hub
+Project #41: Faskesku.id 
 Generated from centralized projects data
 """
 
@@ -7,46 +7,43 @@ from datetime import datetime
 from django.conf import settings
 from apps.data.about.skills_data import SkillsData
 
-# Project data for: MLBB API Stats Hub
+# Project data for: Faskesku.id
 project_data = {
-    "id": 41,
-    "title": """MLBB API Stats Hub""",
-    "headline": """REST API and website loaded with Mobile Legends game data.""",
-    "description": ['A must-have for Mobile Legends fans, this REST API and website dish out hero stats, rankings, and game insights.', 'The API offers clean endpoints for heroes, skills, and meta trends, ideal for devs crafting game tools. Docs are super easy to follow.', 'The site breaks down complex data for casual players, dropping tips on hero matchups, builds, and counters based on the latest meta.'],
+    "id": 41, 
+    "title": "Faskesku.id",
+    "headline": "Platform manajemen fasilitas kesehatan berbasis web untuk monitoring dan layanan pasien.",
+    "description": [
+        "Aplikasi web yang membantu fasilitas-kesehatan (faskes) dalam mengelola jadwal layanan, data pasien, dan statistik operasional.",
+        "Memfasilitasi dashboard status layanan, integrasi dengan sistem BPJS atau JKN, dan pelaporan real-time untuk manajemen rumah sakit/klinik.",
+        "Dirancang untuk meningkatkan transparansi, efisiensi layanan, dan kualitas pengalaman pasien di Indonesia."
+    ],
     "images": {
-        "mobile_legends_bang_bang_api_and_website.webp": f"{settings.PROJECT_BASE_IMG_URL}/mobile_legends_bang_bang_api_and_website.webp"
+        "faskesku_dashboard.jpg": f"{settings.PROJECT_BASE_IMG_URL}/faskesku_dashboard.jpg"
     },
     "is_featured": False,
-    "features": [{'title': 'Game API', 'description': 'GET endpoints for hero stats and rankings.'}, {'title': 'Dev Docs', 'description': 'Next.js-powered guide for easy API use.'}, {'title': 'Player Hub', 'description': 'Simple site for browsing game insights.'}],
-    "tech_stack": [
-        SkillsData.tech_stack["django"],
-        SkillsData.tech_stack["python"],
-        SkillsData.tech_stack["rest_api"],
-        SkillsData.tech_stack["nextjs"],
-        SkillsData.tech_stack["shadcn_ui"],
-        SkillsData.tech_stack["vercel"]
+    "features": [
+        {"title": "Dashboard Operasional Faskes", "description": "Ringkasan layanan, jumlah pasien, kapasitas, dan indikator kinerja dalam satu tampilan."},
+        {"title": "Manajemen Jadwal & Layanan", "description": "Faskes dapat mengatur jadwal layanan, dokter/tenaga medis, dan ruang layanan secara dinamis."},
+        {"title": "Pelaporan & Statistik Real-time", "description": "Data layanan pasien, antrian, dan laporan performa faskes yang bisa diekspor atau di-share ke manajemen atau regulator."}
     ],
-    "github_url": "https://github.com/ridwaanhall/api-mobilelegends",
-    "demo_url": "https://mlbb-stats.ridwaanhall.com/",
-    "status": "completed",
+    "tech_stack": [
+        SkillsData.tech_stack["php"],
+        SkillsData.tech_stack["javascript"],
+        SkillsData.tech_stack["mysql"]
+    ],
+    "github_url": "https://github.com/ardifx01/faskesku.id",
+    "demo_url": "",
+    "status": "in-progress",
     "created_at": None,
-    "updated_at": datetime.strptime("2025-07-06T16:51:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
-    "category": "API, Gaming, MLBB, Web App, Data Visualization",
+    "updated_at": datetime.strptime("2025-10-24T00:00:00+07:00", "%Y-%m-%dT%H:%M:%S%z"),
+    "category": "Sistem Informasi Kesehatan, Manajemen Faskes",
     "tags": [
-        "MLBB",
-        "Mobile Legends",
-        "API",
-        "REST API",
-        "Django",
-        "Next.js",
-        "Game Stats",
-        "Hero Data",
-        "Meta Analysis",
-        "Shadcn UI",
-        "Vercel",
-        "Python",
-        "Gaming",
-        "Data Visualization"
+        "Fasilitas Kesehatan",
+        "Manajemen Faskes",
+        "Dashboard",
+        "BPJS",
+        "PHP",
+        "Javascript"
     ],
     "priority": 1,
     "slug": ""

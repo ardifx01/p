@@ -11,13 +11,13 @@ class ExperiencesData:
     - Internship (Magang)
     - Apprenticeship (Pelatihan kerja atau magang kejuruan)
     - Seasonal (Pekerjaan musiman)
-
+    
     location type:
     - On-site: Bekerja langsung di lokasi fisik (contoh: kantor).
     - Hybrid: Kombinasi antara bekerja dari lokasi fisik dan jarak jauh.
     - Remote: Sepenuhnya bekerja jarak jauh (contoh: dari rumah).
     '''
-
+    
     employment_types = {
         "ft": "Full-time",
         "pt": "Part-time",
@@ -29,66 +29,50 @@ class ExperiencesData:
         "sn": "Seasonal",
         "sc": "Scholarship"
     }
-
+    
     location_types = {
         "on": "On-site",
         "hy": "Hybrid",
         "rm": "Remote"
     }
-
+    
     experiences = [
-        # --- Added experiences (government/university clients) ---
-        {
+	{
             "id": 17,
             "title": "Fullstack Developer (IT Solutions)",
-            "company": "Universitas 17 Agustus 1945 Semarang",
-            "logo": f"{settings.BASE_URL}/static/img/logo/untagsmg.jpg",
-            "website": "https://untagsmg.ac.id",
+            "company": "Kementerian Komunikasi dan Digital (Komdigi)",
+            "logo": f"{settings.BASE_URL}/static/img/logo/komdigi.jpg", 
+            "website": "https://www.komdigi.go.id",
             "period": {
-                "start": {"month": "Jan", "year": 2025},
-                "end": "Present"
+                "start": {
+		"month": "Jan", 
+		"year": 2026
+	        }, 
+                "end": "Present" 
             },
-            "employment_type": employment_types["fr"],
-            "location_type": location_types["hy"],
-            "location": "Semarang, Indonesia 🇮🇩",
+            "employment_type": employment_types["pt"],
+            "location_type": location_types["on"],
+            "location": "Jakarta, Indonesia 🇮🇩",
             "is_current": True,
             "responsibilities": [
-                "Developed academic and administrative web systems (backend APIs + frontend UI) aligned to campus workflows.",
-                "Implemented authentication, RBAC, and data integrity rules across student/staff modules.",
-                "Optimized database design and performance for reporting and high-frequency transactions.",
-                "Collaborated with stakeholders, delivered iterative releases, and maintained long-term system stability."
+                "Developed and maintained internal web applications using Django/DRF and modern frontend workflows.",
+                "Built REST APIs, authentication/authorization, and role-based access control for multi-user systems.",
+                "Designed database schemas and optimized queries for reporting and operational dashboards.",
+                "Implemented deployment and monitoring practices, improving reliability and maintainability."
             ]
         },
         {
             "id": 16,
-            "title": "Fullstack Developer (Information System)",
-            "company": "Semarangkota",
-            "logo": f"{settings.BASE_URL}/static/img/logo/semarang.jpg",
-            "website": "https://semarangkota.go.id",
-            "period": {
-                "start": {"month": "Oct", "year": 2025},
-                "end": "Present"
-            },
-            "employment_type": employment_types["fr"],
-            "location_type": location_types["on"],
-            "location": "Semarang, Indonesia 🇮🇩",
-            "is_current": True,
-            "responsibilities": [
-                "Built social assistance information systems for beneficiary data management and verification workflows.",
-                "Implemented backend modules: CRUD, validation rules, audit logging, and role-based permissions.",
-                "Developed responsive UI components and dashboards for operational staff.",
-                "Handled deployment, bugfixing, and post-release support to ensure smooth adoption."
-            ]
-        },
-        {
-            "id": 15,
             "title": "Fullstack Developer (Data & Platform)",
             "company": "Badan Pembinaan Ideologi Pancasila (BPIP)",
-            "logo": f"{settings.BASE_URL}/static/img/logo/bpip.jpg",
+            "logo": f"{settings.BASE_URL}/static/img/logo/bpip.jpg", 
             "website": "https://bpip.go.id",
             "period": {
-                "start": {"month": "Jul", "year": 2025},
-                "end": "Present"
+                "start": {
+		"month": "Jul", 
+		"year": 2025
+		}, 
+                "end": "Present" 
             },
             "employment_type": employment_types["co"],
             "location_type": location_types["rm"],
@@ -102,28 +86,54 @@ class ExperiencesData:
             ]
         },
         {
-            "id": 14,
-            "title": "Fullstack Developer (IT Solutions)",
-            "company": "Kementerian Komunikasi dan Digital (Komdigi)",
-            "logo": f"{settings.BASE_URL}/static/img/logo/komdigi.png",
-            "website": "https://www.komdigi.go.id",
+            "id": 15,
+            "title": "Fullstack Developer (Information System)",
+            "company": "Semarangkota", 
+            "logo": f"{settings.BASE_URL}/static/img/logo/semarang.jpg", 
+            "website": "https://semarangkota.go.id", 
             "period": {
-                "start": {"month": "Jan", "year": 2026},
-                "end": "Present"
+                "start": {
+		"month": "Oct", 
+		"year": 2025
+		}, 
+                "end": "Present" 
             },
-            "employment_type": employment_types["pt"],
+            "employment_type": employment_types["fr"],
             "location_type": location_types["on"],
-            "location": "Jakarta, Indonesia 🇮🇩",
+            "location": "Indonesia 🇮🇩",
             "is_current": True,
             "responsibilities": [
-                "Developed and maintained internal web applications using Django/DRF and modern frontend workflows.",
-                "Built REST APIs, authentication/authorization, and role-based access control for multi-user systems.",
-                "Designed database schemas and optimized queries for reporting and operational dashboards.",
-                "Implemented deployment and monitoring practices, improving reliability and maintainability."
+                "Built social assistance information systems for beneficiary data management and verification workflows.",
+                "Implemented backend modules: CRUD, validation rules, audit logging, and role-based permissions.",
+                "Developed responsive UI components and dashboards for operational staff.",
+                "Handled deployment, bugfixing, and post-release support to ensure smooth adoption."
             ]
         },
+        {
+            "id": 14,
+            "title": "Fullstack Developer (IT Solutions)",
+            "company": "Universitas 17 Agustus 1945 Semarang",
+            "logo": f"{settings.BASE_URL}/static/img/logo/untagsmg.jpg", 
+            "website": "https://untagsmg.ac.id",
+            "period": {
+                "start": {
+		"month": "Jan", 
+		"year": 2025
+	     },
+                "end": "Present"
+            },
+            "employment_type": employment_types["fr"],
+            "location_type": location_types["hy"],
+            "location": "Semarang, Indonesia 🇮🇩",
+            "is_current": True,
+            "responsibilities": [
+                "Developed academic and administrative web systems (backend APIs + frontend UI) aligned to campus workflows.",
+                "Implemented authentication, RBAC, and data integrity rules across student/staff modules.",
+                "Optimized database design and performance for reporting and high-frequency transactions.",
+                "Collaborated with stakeholders, delivered iterative releases, and maintained long-term system stability."
+            ]
+        }
 
-        # --- Existing experiences ---
         {
             "id": 13,
             "title": "Founder",
@@ -131,7 +141,10 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/copilot_id.webp",
             "website": "https://github.com/copilot-id",
             "period": {
-                "start": {"month": "Jan", "year": 2023},
+                "start": {
+                    "month": "Jan",
+                    "year": 2023
+                },
                 "end": "Present"
             },
             "employment_type": employment_types["se"],
@@ -154,7 +167,10 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/ikappim_21.webp",
             "website": "https://www.instagram.com/ikappim_21/",
             "period": {
-                "start": {"month": "Sep", "year": 2021},
+                "start": {
+                    "month": "Sep",
+                    "year": 2021
+                },
                 "end": "Present"
             },
             "employment_type": employment_types["pt"],
@@ -174,8 +190,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/coding_camp_dbs_foundation.webp",
             "website": "https://go.dbs.com/dbsfcodingcamp",
             "period": {
-                "start": {"month": "Feb", "year": 2025},
-                "end": {"month": "Jul", "year": 2025}
+                "start": {
+                    "month": "Feb",
+                    "year": 2025
+                },
+                "end": {
+                    "month": "Jul",
+                    "year": 2025
+                }
             },
             "employment_type": employment_types["pt"],
             "location_type": location_types["rm"],
@@ -195,8 +217,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/coding_camp_dbs_foundation.webp",
             "website": "https://go.dbs.com/dbsfcodingcamp",
             "period": {
-                "start": {"month": "Dec", "year": 2024},
-                "end": {"month": "Jan", "year": 2025}
+                "start": {
+                    "month": "Dec",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "Jan",
+                    "year": 2025
+                }
             },
             "employment_type": employment_types["sc"],
             "location_type": location_types["rm"],
@@ -214,8 +242,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/coding_camp_dbs_foundation.webp",
             "website": "https://go.dbs.com/dbsfcodingcamp",
             "period": {
-                "start": {"month": "Oct", "year": 2024},
-                "end": {"month": "Dec", "year": 2024}
+                "start": {
+                    "month": "Oct",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "Dec",
+                    "year": 2024
+                }
             },
             "employment_type": employment_types["sc"],
             "location_type": location_types["rm"],
@@ -236,8 +270,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/coding_camp_dbs_foundation.webp",
             "website": "https://go.dbs.com/dbsfcodingcamp",
             "period": {
-                "start": {"month": "Jul", "year": 2024},
-                "end": {"month": "Sep", "year": 2024}
+                "start": {
+                    "month": "Jul",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "Sep",
+                    "year": 2024
+                }
             },
             "employment_type": employment_types["sc"],
             "location_type": location_types["rm"],
@@ -258,8 +298,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/coding_camp_dbs_foundation.webp",
             "website": "https://go.dbs.com/dbsfcodingcamp",
             "period": {
-                "start": {"month": "Jan", "year": 2024},
-                "end": {"month": "Jun", "year": 2024}
+                "start": {
+                    "month": "Jan",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "Jun",
+                    "year": 2024
+                }
             },
             "employment_type": employment_types["sc"],
             "location_type": location_types["rm"],
@@ -278,8 +324,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/gaotek_inc.webp",
             "website": "https://gaotek.com",
             "period": {
-                "start": {"month": "Apr", "year": 2024},
-                "end": {"month": "May", "year": 2024}
+                "start": {
+                    "month": "Apr",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "May",
+                    "year": 2024
+                }
             },
             "employment_type": employment_types["in"],
             "location_type": location_types["rm"],
@@ -298,8 +350,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/gaotek_inc.webp",
             "website": "https://gaotek.com",
             "period": {
-                "start": {"month": "Apr", "year": 2024},
-                "end": {"month": "May", "year": 2024}
+                "start": {
+                    "month": "Apr",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "May",
+                    "year": 2024
+                }
             },
             "employment_type": employment_types["in"],
             "location_type": location_types["rm"],
@@ -318,8 +376,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/gaotek_inc.webp",
             "website": "https://gaotek.com",
             "period": {
-                "start": {"month": "Feb", "year": 2024},
-                "end": {"month": "Mar", "year": 2024}
+                "start": {
+                    "month": "Feb",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "Mar",
+                    "year": 2024
+                }
             },
             "employment_type": employment_types["in"],
             "location_type": location_types["rm"],
@@ -339,8 +403,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/youngdev.webp",
             "website": "https://youngdevinterns.net",
             "period": {
-                "start": {"month": "Apr", "year": 2024},
-                "end": {"month": "May", "year": 2024}
+                "start": {
+                    "month": "Apr",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "May",
+                    "year": 2024
+                }
             },
             "employment_type": employment_types["in"],
             "location_type": location_types["rm"],
@@ -358,8 +428,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/ineuron.webp",
             "website": "https://ineuron.ai",
             "period": {
-                "start": {"month": "Jan", "year": 2024},
-                "end": {"month": "Jan", "year": 2024}
+                "start": {
+                    "month": "Jan",
+                    "year": 2024
+                },
+                "end": {
+                    "month": "Jan",
+                    "year": 2024
+                }
             },
             "employment_type": employment_types["in"],
             "location_type": location_types["rm"],
@@ -377,8 +453,14 @@ class ExperiencesData:
             "logo": f"{settings.BASE_URL}/static/img/logo/ist.webp",
             "website": "https://istngruki.org",
             "period": {
-                "start": {"month": "Sep", "year": 2019},
-                "end": {"month": "Sep", "year": 2020}
+                "start": {
+                    "month": "Sep",
+                    "year": 2019
+                },
+                "end": {
+                    "month": "Sep",
+                    "year": 2020
+                }
             },
             "employment_type": employment_types["ft"],
             "location_type": location_types["on"],

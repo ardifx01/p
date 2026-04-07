@@ -52,7 +52,7 @@ class ApplicationsData:
         {
             "id": 13,
             "company_name": "HashMicro",
-            "status": "Rejected",
+            "status": "Accepted",
             "position": "Python Developer (Django)",
             "journey": [
                 {
@@ -101,7 +101,7 @@ class ApplicationsData:
         {
             "id": 12,
             "company_name": "Indigoshi Digital Indonesia",
-            "status": "Rejected",
+            "status": "Accepted",
             "position": "Python Developer (Junior Level)",
             "journey": [
                 {
@@ -140,7 +140,7 @@ class ApplicationsData:
         {
             "id": 11,
             "company_name": "Shortlyst AI",
-            "status": "Ghosted",
+            "status": "Accepted",
             "position": "Backend Engineer Intern",
             "journey": [
                 {
@@ -169,7 +169,7 @@ class ApplicationsData:
         {
             "id": 10,
             "company_name": "Speechify",
-            "status": "Rejected",
+            "status": "Accepted",
             "position": "Frontend Developer",
             "journey": [
                 {
@@ -203,7 +203,7 @@ class ApplicationsData:
         {
             "id": 9,
             "company_name": "National Fair Housing Alliance",
-            "status": "Rejected",
+            "status": "Accepted",
             "position": "AI Engineer Intern",
             "journey": [
                 {
@@ -227,7 +227,7 @@ class ApplicationsData:
         {
             "id": 8,
             "company_name": "Reality AI Lab",
-            "status": "Rejected",
+            "status": "Accepted",
             "position": "AI Engineer Intern",
             "journey": [
                 {
